@@ -10,12 +10,13 @@ Voir [omp.md](./omp.md)
 |---------	    |-----------------------	|---------------	|
 | `cd [chemin_fichier]` 	| Ouvre le fichier mentioner         | `cd projects_cedeg `          	|
 | `ls`  	    | Affiche les fichier et dossier dans le repertoire actuel         	| `ls`         	
-| `code .`  	    | Ouvre le repertoire actuel dans VSCode         	|          
+| `code .`  	    | Ouvre le repertoire actuel dans VSCode         	|        
+| `mkdir [nom_fichier]`  	    | Créer un nouveau dossier          	|   `mkdir newFolder`
 
 
 ## Chemin d'un fichier
 
-🗀 projet_cedeg .<br>
+🗀 projet_cedeg<br>
 ├── 🗀 assets<br>
 ├── index.html<br>
 ├── 🗀 javascript<br>
