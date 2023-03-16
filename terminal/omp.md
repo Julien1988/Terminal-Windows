@@ -60,7 +60,7 @@ Pour appliquer le theme voulu:
 notepad $env:POSH_THEMES_PATH/my_theme.omp.json
 ```
 
-Copier le code depuis le site web (eg: https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/capr4n.omp.json) et coller le dans le bloc note.
+Copier le code du theme depuis le site web (example: https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/capr4n.omp.json) et coller le dans le bloc note.
 > Noublier pas de sauvegarder le fichier!
 
 Appliquer le theme
