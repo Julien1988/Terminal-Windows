@@ -15,6 +15,7 @@ Installer l'application windows-terminal depuis le microsoft store: https://apps
 ### Installer une nerd font 🤓
 - Installer  [Meslo LGM NF](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip)
 ou une de votre choix sur https://www.nerdfonts.com/ 
+> Si plusieurs fichier son disponnible dans le dossier de la font, selectionner une qui ne mentione pas bold ou italic
 - Dite a Terminal d'utiliser la font de votre choix:
     - Ouvrir les paramètre (la flêche a coté du +)
     - Windows PowerShell -> Apparence -> Type de police

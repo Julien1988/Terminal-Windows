@@ -1,7 +1,5 @@
-# CEDEG: Truc utiles et notes 
+# CEDEG: Truc utiles et notes
 
-- [terminal.md](./terminal/README.md): Des commandes frequentes du terminal
+- [terminal.md](./terminal/README.md): Le terminal (commandes, personnalisation, etc)
 
-- [omp.md](./terminal/omp.md): Personnaliser le terminal
-
-- [vscode.md](./vscode/README.md): Des extentions et autres pour vscode
+- [vscode.md](./vscode/README.md): Trucs sur vscode (extensions, emmet)
