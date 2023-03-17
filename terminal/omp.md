@@ -21,6 +21,8 @@ ou une de votre choix sur https://www.nerdfonts.com/
     - Windows PowerShell -> Apparence -> Type de police
 
 ### Installer Oh My Posh
+
+# NE FONCTIONNE PAS SUR LES PORTABLES DONNé PAR CEDEG
 Copier dans le terminal:
 ```
 winget install JanDeDobbeleer.OhMyPosh -s winget
