@@ -129,15 +129,14 @@ p>lorem
 ```
 > ! Bien que se soit du texte, lorem est considerer comme un element; p{lorem} donnera `<p>lorem</p>` et non le resultat voulu 
 
-### Brother (/)
+### Brother (+)
 
-Peux êtres remplacer par un `+`. Au choix.
 
-Ajouter `/element`, où `element` est un element html (div, p, h1), a la fin du tag pour l'ajouter comme frère:
+Ajouter `+element`, où `element` est un element html (div, p, h1), a la fin du tag pour l'ajouter comme frère:
 
 ```html
 
-div>h1/p
+div>h1+p
 
 ==>
 
@@ -154,7 +153,7 @@ Permet de grouper certain elements. Specialement en cas de multiplication
 
 ```html
 
-(div>h1/p)*2
+(div>h1+p)*2
 
 ==>
 
@@ -170,7 +169,7 @@ Permet de grouper certain elements. Specialement en cas de multiplication
 
 ```html
 
-ul>(li>h1/p)*3
+ul>(li>h1+p)*3
 
 ==>
 
@@ -194,7 +193,7 @@ ul>(li>h1/p)*3
 ### Sans les parentheses
 
 ```html
-div>h1/p*2
+div>h1+p*2
 
 ==>
 
@@ -207,7 +206,7 @@ div>h1/p*2
 
 ```html
 
-ul>li>h1/p*3
+ul>li>h1+p*3
 
 ==>
 
@@ -226,7 +225,7 @@ ul>li>h1/p*3
 
 
 ```html
-div>h1#title{Mon Titre}/p>lorem
+div>h1#title{Mon Titre}+p>lorem
 
 ==>
 
@@ -238,7 +237,7 @@ div>h1#title{Mon Titre}/p>lorem
 
 ```html
 
-ul>(li>h1{Titre}/p{mon texte})*3
+ul>(li>h1{Titre}+p{mon texte})*3
 
 ==>
 
