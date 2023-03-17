@@ -1,5 +1,7 @@
 # CEDEG: Truc utiles et notes
 
-- [terminal.md](./terminal/README.md): Le terminal (commandes, personnalisation, etc)
+- [Terminal](./terminal/README.md): Le terminal (commandes, personnalisation, etc)
 
-- [vscode.md](./vscode/README.md): Trucs sur vscode (extensions, emmet)
+- [VSCode](./vscode/README.md): Trucs sur vscode (extensions, emmet)
+
+- [JavaScript](./javascript/README.md): Notebook Javascript

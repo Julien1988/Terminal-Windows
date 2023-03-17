@@ -1,5 +1,7 @@
 # Ajouter la commande touch a PowerShell
 
+## ! Ne marche pas sur les portables donné par cedeg!
+
 Dans PowerShell:
 ```
 notepad $PROFILE

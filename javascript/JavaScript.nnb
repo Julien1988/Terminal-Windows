@@ -1,0 +1,451 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Variables\r\n\r\n\r\n "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Variables are used to store information to be referenced and manipulated in a computer program. They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. \r\n\r\nIt is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Declaring variables\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\nTo declare a variable, use the keyword `let` followed by a name, typically in camel case (eg: myVariable)."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myVariable;          // JavaScript creates a variable called myVariable that hold no value"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Assigning a value to a variable\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\nHaving a variable is cool but what is the point if it holds no value?\r\n\r\nTo assign a value to a variable simply write that variable's name follow by an equal sign (=) and finally your value."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myAge;              // Declare a variable named 'myAge'\r\nmyAge = 17;             // Assign the value 26 to the variable\r\n\r\nlet myName = \"John\";    // Declare a variable named 'myName' and assign the value \"John\""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "*Note that you can declare a variable without assigning it a value. By default, a variable with no value is equal to `undefined`*"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Const Variables"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "`const` variables are just like let variables for the exception that they cannot be modified. They are declared the same way as `let` variables **but** they must be assigned a value (Since you cannot modify the value, once declared the value cannot change.)."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const superSecretPassword = \"password123\"; // everything is fine\r\n\r\nsuperSecretPassword = \"newpassword\"; // ! This will generate an error ! \r\n\r\nconst newPassword;          // ! A const variable cannot be declared without being assigned a value!"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.error",
+                            "value": {
+                                "name": "Error",
+                                "message": "Failed to generate code object, \nundefined\n                 ^\n\nUnexpected token ';'",
+                                "stack": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Value types\r\n\r\n\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "When a variable is created, it's type will be inferred from its assigned value.\r\n\r\nHere are the different kind of values:\r\n\r\n| Type    \t| Value                 \t| Example       \t|\r\n|---------\t|-----------------------\t|---------------\t|\r\n| Boolean \t| `True` or `False`         | `True`          \t|\r\n| Number  \t| Any number           \t| `-56.2`         \t|\r\n| String  \t| A chain of characters \t| `\"Hello world\"` \t|\r\n\r\n\r\n> Note: a string value will always be between single/double quotes."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\";        // String\r\nlet myAge = 17;             // Number\r\nlet isMajor = false;        // Boolean"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Using variables\r\n\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Good! Now you know how to make variables and how to assign a value to one. But what can I do with them?\r\n\r\nFirst off, let's try modifying the value of a variable"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\";\r\nlet myAge = 17;         \r\nlet isMajor = false; \r\n\r\nmyName = \"Johnathan\";\r\nmyAge = myAge + 6;\r\nisMajor = true;"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "A lot of things are happening; the variable 'myName' is assigned a new value, something weird is happening to the value 'myAge' and 'isMajor' is assigned a new value too.\r\n\r\nLet's take our attention to the variable 'myAge':"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myAge = 17;\r\n\r\nmyAge = myAge + 6"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "The variable is declared and assigned the value `17`.\r\nThen we assign `myAge + 6` to the variable.\r\n\r\nIn this case, the computer will see it like this"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myAge = 17;\r\n\r\nmyAge = 17 + 6;  // myAge = myAge + 6 "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "As you can see, `myAge` is replaced by it's value and `6` is added to it. And finally it's assigned to `myAge`\r\n\r\nThis happens because the symbol equal sign (=) doesn't not mean `equal` but rather `assign to`.\r\n\r\nIn math, it's not possible for a value to be equal to itself + 6. But in programming, since the symbol means `to assign` instead of `is equal`, we are assigning the value of `myAge + 6` to `myAge`\r\n\r\n=> It is the equivalent of simply doing +6 to the value `myAge`\r\n\r\nHere is a simpler way to increment a variable:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myAge = 17;\r\n\r\nmyAge += 6;      // equivalent of doing: myAge = myAge + 6"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "`myAge` is equal to `23` "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Functions"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "A function is simply a \"chunk\" of code that you can use over and over again, rather than writing it out multiple times. Functions enable programmers to break down or decompose a problem into smaller chunks, each of which performs a particular task."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Creating a function"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "To create a function, use the keyword `function` followed by a name (in *camelCase*) with parenthesis at the end and finally a block of code (represented by curly brackets: { } )"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function myFunction() { \r\n    \r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "To use a function, write the name of the said function followed by parenthesis"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function myFunction() {\r\n\r\n}\r\n\r\nmyFunction();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Here the computer creates a function and then executes it. But when running this code nothing happens so let's try adding some functionality!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function meow() {\r\n    console.log(\"meow\");\r\n}\r\n\r\nmeow();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "If you execute the code above \"meow\" will be printed to the console every time the function `meow` is called.\r\n\r\nBut let's focus on the second line"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(\"meow\");"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "What exactly is happening here?\r\n\r\n`console` is what we call an object (we will discuss about objects later)\r\nand `log()` is a function of that said object.\r\n\r\nImagine an object like a big box that holds `variables` and `functions`.\r\n\r\nTo access the contents of an object, simply write that object's name followed by a dot (`.`) and the desired function.\r\n\r\nIn the example above, we are calling the `function` **log()** from the object `console` and we are giving `\"meow\"` as a parameter.\r\n\r\nWhen executed, \"meow\" will be outputted to the console."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Parameters"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Passing parameters"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Parameters is a way to give data to a function"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(\"meow\");"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Here we are giving the data `\"meow\"` of type `string` (see __Value Types__) to the function `log()`\r\n\r\nLet's try giving it variables"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\";\r\n\r\nconsole.log(myName);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "This will print out \"John\" to the console; but what if we wanted to say \"Hello X\" instead of simply stating the person's name?\r\n\r\nTo achieve that, we could give `\"Hello \" + myName` as parameter for the function"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\";\r\n\r\nconsole.log(\"Hello \" + myName);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Perfect! Now let's try stating everything about John"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\"\r\nlet myAge = 17;\r\nlet livesIn = \"Italia\" ;\r\n\r\nconsole.log(\"Hello, my name is \" + myName + \", I am \" + myAge + \" years old and I live in \" + livesIn);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "This works but is very tedious to write. \r\nAnother way to achieve the same result is to use `String Interpolation`."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\";\r\nlet myAge = 17;\r\nlet livesIn = \"Italia\";\r\n\r\nconsole.log(`Hello, my name is ${myName}, I am ${myAge} years old and I live in ${livesIn}`);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Now that's easier to read!\r\n\r\nTo use `string interpolation` we use back ticks (\\`\\`) instead of single/double quotes ('' / \"\"). And `${}` when giving a variable"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\";\r\n\r\nlet myString = \"Hello everyone! My name is \" + myName\r\n\r\nlet interpolatedString = `Hello everyone! My name is ${myName}`;"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Adding parameters to a function"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Functions let's you re-use a part of code without having to write it again. \r\n\r\nLet's say we have a shop and every time someone enters we need to tell them hello and then add 1 to the number of total visitors.\r\nThis would be the equivalent of the following code\r\n\r\nIf we get a few people every day it might be manageable but what if hundreds of people come in every day?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let totalVisitors = 0;\r\n\r\n// Person enters the shop\r\nconsole.log(\"Hello! Welcome to our shop\");\r\ntotalVisitors+=1;\r\n\r\n// Person enters the shop\r\nconsole.log(\"Hello! Welcome to our shop\");\r\ntotalVisitors += 1;\r\n\r\n// Person enters the shop\r\nconsole.log(\"Hello! Welcome to our shop\");\r\ntotalVisitors += 1;\r\n\r\n// Person enters the shop\r\nconsole.log(\"Hello! Welcome to our shop\");\r\ntotalVisitors += 1;\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Here is a solution to that problem; functions!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function greetPerson() {\r\n    totalVisitors += 1;\r\n    console.log(\"Hello! Welcome to our shop\");\r\n}\r\n\r\nlet totalVisitors = 0;\r\n\r\n// Person enters the shop\r\ngreetPerson();\r\n\r\n// Person enters the shop\r\ngreetPerson();\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "This is great but what if we also wanted to tell the customer's name? This is where parameters gets useful"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function greetPerson(name) {\r\n    console.log(`Hello ${name}! Welcome to our shop`);\r\n}\r\n\r\nlet person1 = \"Jack\";\r\nlet person2 = \"Bob\";\r\nlet person3 = \"Alexander\";\r\n\r\ngreetPerson(person1);\r\ngreetPerson(person2);\r\ngreetPerson(person3);\r\n\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "To add a parameter simply add a name inside the functions parenthesis. This will become a variable which holds the data of whatever was given."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function greetPerson(name) {\r\n    console.log(`Hello ${name}! Welcome to our shop`);\r\n}\r\n\r\ngreetPerson(\"John\");"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "As you can see, it doesn't have to be a name to be used. It can even be a number."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function greetPerson(name) {\r\n    console.log(`Hello ${name}! Welcome to our shop`);\r\n}\r\n\r\ngreetPerson(24);"
+            ],
+            "outputs": []
+        }
+    ]
+}
