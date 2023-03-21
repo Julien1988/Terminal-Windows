@@ -1,0 +1,286 @@
+@font-face {
+    font-family: "ClimateCrisis";
+    src: url("./assets/fonts/Climate_Crisis/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+@font-face {
+    font-family: "Epilogue";
+    src: url("./assets/fonts/Epilogue/Epilogue-VariableFont_wght.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Epilogue';
+}
+
+h1 {
+    font-size: 4em;
+}
+
+body {
+    font-family: 'Epilogue';
+}
+
+.hidden {
+    display: none;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* HEADER */
+
+.header {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 4px solid black;
+    width: 100%;
+    /* padding: 20px; */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.header__container {
+    background-image: url(./assets/rickmortybanner.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__tittle {
+    text-transform: uppercase;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.header__button {
+    width: 50px;
+    height: 100%;
+    border: none;
+    position: relative;
+    top: -5px;
+    margin-left: 10px;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.header__button:hover {
+    background-color: rgb(185, 243, 243);
+}
+
+.header__button__image {
+    width: 100%;
+    height: 100%;
+}
+
+.header__nav__list {
+    list-style: none;
+    background-image: url(./assets/rickmortybanner.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+.header__nav__list__item {
+    transition: 1s;
+    margin: 10px 0;
+}
+
+.header__nav__list__item__link {
+    text-decoration: none;
+    color: transparent;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.header__nav__list__item:hover {
+    transform: translateX(40px);
+}
+
+.header__line {
+    display: none;
+}
+
+/* MAIN */
+
+.gradient {
+    background: linear-gradient(0deg, rgba(29, 203, 103, 1) 0%, rgba(184, 34, 195, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.main {
+    margin-top: 110px;
+    padding: 10px;
+}
+
+.main__article__title {
+    font-size: 2em;
+}
+
+.main__article__content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main__article__content__text {
+    border: 2px solid rgb(29, 203, 103);
+    padding: 20px;
+    margin: 0px;
+}
+
+.main__article__content__image {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER */
+
+.footer {
+    display: none;
+}
+
+.footer__nav__list {
+    font-weight: bold;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footer__nav__list__item__link {
+    text-decoration: none;
+    color: transparent;
+    font-size: 2em;
+}
+
+.footer__nav__list__item {
+    transition: 1s;
+}
+
+.footer__nav__list__item:hover {
+    transform: translateX(40px);
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .header {
+        background-color: transparent;
+        position: relative;
+        border: none;
+    }
+
+    .header__container {
+        background-image: url(./assets/rickmortybanner.jpg);
+        background-size: cover;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        border: none;
+    }
+
+    .header__tittle {
+        text-transform: uppercase;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .header__nav {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .header__nav__list {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        list-style: none;
+        font-weight: bold;
+        padding-left: 0px;
+    }
+
+    .header__nav__list__item__link {
+        text-decoration: none;
+        color: transparent;
+        font-size: 2em;
+    }
+
+    .header__nav__list__item {
+        transition: 1s;
+    }
+
+    .header__nav__list__item:hover {
+        transform: translateX(40px);
+    }
+
+    .header__line {
+        background-image: url(./assets/rickmortybanner.jpg);
+        height: 20px;
+        /* max-width: 50%; */
+        width: 100%;
+        transform: skewY(-3deg);
+        margin: auto;
+        margin: 50px 0px;
+    }
+
+    .footer__nav__list {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .main {
+        margin-top: 0px;
+    }
+
+    .main__article__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: flex-start;
+    }
+
+    .main__article__content__text {
+        width: 100%;
+    }
+
+    .footer {
+        background-image: url(./assets/rickmortybanner.jpg);
+        background-size: cover;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-top: 40px;
+        position: relative;
+        bottom: 0;
+    }
+}

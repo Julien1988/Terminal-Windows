@@ -1,0 +1,134 @@
+body {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    background-image: url(./assets/image.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+}
+
+a {
+    color: #89b4fa;
+    padding: 10px;
+    background-color: #1e1e2e;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    color: #1e1e2e;
+    background-color: #89b4fa;
+}
+
+img {
+    width: 50px;
+}
+
+table {
+    background-color: #45475a;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+tr>td:first-child {
+    background-color: #a6e3a1;
+    color: #313244;
+}
+
+td {
+    /* background-color: #89b4fa; */
+    /* border: 2px solid #cdd6f4; */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#cat_pictures {
+    list-style-type: none;
+    min-width: 250px;
+}
+
+#texte-inutile {
+    font-size: 1.1em;
+    overflow-x: auto;
+}
+
+.header__nav__list {
+    list-style: none;
+    /* font-size: 18px; */
+    font-size: 1.2em;
+    margin-left: 0px;
+}
+
+.header__nav__list>li {
+    padding: 12px;
+}
+
+.header__nav__list>li>a {
+    text-decoration: none;
+}
+
+.footer__nav__list>li {
+    padding: 10px;
+}
+
+.widget {
+    background-color: rgba(49, 50, 68, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    border: #11111b solid 3px;
+}
+
+.widget:hover {
+    border: #b4befe solid 3px;
+}
+
+.content {
+    background-color: #45475a;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+.table__header__row {
+    background-color: rebeccapurple;
+}
+
+.header__container {
+    background-color: #f38ba8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.header__container__title {
+    color: #313244;
+}
+
+.main {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+@media (max-width: 1000px) {
+
+    .main {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 500px) {
+    .header__nav__list>li {
+        padding: 12px;
+        float: left;
+    }
+
+    .header {
+        text-align: center;
+    }
+}
