@@ -7,6 +7,8 @@ Celui-ci contient certaines bases de Javascript notamment les variables et fonct
 
 > Vous aurez besoin de l'extension [Node.js Notebooks extension](https://marketplace.visualstudio.com/items?itemName=donjayamanne.typescript-notebook) pour l'ouvrir
 
+### Via le terminal:
+
 ```
 git clone https://github.com/mazynoah/CEDEG
 cd CEDEG
