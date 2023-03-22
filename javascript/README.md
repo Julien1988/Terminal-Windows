@@ -1,6 +1,7 @@
 # JavaScript
 
-## The notebook
+## Le notebook
+
 Pour voir le notebook, télécharger le fichier [JavaSript.nnb](./JavaScript.nnb), ensuite, ouvrer le dans visual studio.
 
 Celui-ci contient certaines bases de Javascript notamment les variables et fonctions.
@@ -12,5 +13,13 @@ Celui-ci contient certaines bases de Javascript notamment les variables et fonct
 ```
 git clone https://github.com/mazynoah/CEDEG
 cd CEDEG
-code .\javascript\JavaScript.nnb
+code ./javascript
 ```
+
+### Les exercices
+
+Plusieurs exercices sont disponible dans le fichier [exercices](./exercices).
+
+## Les examples
+
+Plusieurs examples sont disponible dans le fichier [examples](./examples).

@@ -178,6 +178,20 @@
         {
             "language": "markdown",
             "source": [
+                "### Les opérateurs"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\n\r\n| Operator  | Description                   | Example           |\r\n|---------\t|-----------------------        |---------------    |\r\n| +         | Addition                      | `4 + 8` => 12     |\r\n| -         | Soustraction                  | `4 - 3` => 1      |\r\n| * \t    | Multpiplication \t  \t        | `4*2` => 8        |\r\n| / \t    | Division \t         \t        | `4/2` => 2        |\r\n| += \t    | Addition et assignation \t    | `let x = 10;` <br> `x += 5` <br> x est égal a 15  |\r\n| -= \t    | Soustraction et assignation   | `let x = 10;` <br> `x -= 5` <br> x est égal a 5   |\r\n| *= \t    | Multiplication et assignation | `let x = 10;` <br> `x *= 5` <br> x est égal a 50  |\r\n| /= \t    | Division et assignation       | `let x = 10;` <br> `x /= 5` <br> x est égal a 2   |\r\n| ++        | Incrementation                | `let x = 10;` <br> `x++;`   <br> x est égal a 11  |\r\n| --        | Decrementation                | `let x = 10;` <br> `x--;`   <br> x est égal a 9   |\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
                 "# Les Fonctions"
             ],
             "outputs": []
@@ -451,7 +465,7 @@
         {
             "language": "markdown",
             "source": [
-                "| Opérateur | Descriptions              | Exemple       \t        |\r\n|---------\t|-----------------------\t|---------------\t        |\r\n| <\t        | est inférieur à           | `5 < 10`                  |\r\n| >         | est supérieur à         \t| `10 > 1`         \t        |\r\n| <=  \t    | est égal ou inférieur à   | `4 <= 10` <br> `4 <= 4`   |\r\n| >=  \t    | est égal ou supérieur à   | `4 >= 2` <br> `4 >= 4`    |\r\n| ==        | est égal à                | `\"john\" == \"john\"`        |\r\n| !=        | est different de          | `\"john\" != \"pierre\"`      |\r\n"
+                "| Opérateur | Descriptions              | Exemple       \t        |\r\n|---------\t|-----------------------\t|---------------\t        |\r\n| <\t        | est inférieur à           | `5 < 10`                  |\r\n| >         | est supérieur à         \t| `10 > 1`         \t        |\r\n| <=  \t    | est inférieur ou égal à   | `4 <= 10` <br> `4 <= 4`   |\r\n| >=  \t    | est supérieur ou égal à   | `4 >= 2` <br> `4 >= 4`    |\r\n| ==        | est égal à                | `\"john\" == \"john\"`        |\r\n| !=        | est different de          | `\"john\" != \"pierre\"`      |\r\n> Tout les examples équivale la valeur `true`"
             ],
             "outputs": []
         },
