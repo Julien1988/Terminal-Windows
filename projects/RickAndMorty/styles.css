@@ -264,6 +264,14 @@ body {
         align-items: flex-start;
     }
 
+    .main__article:nth-child(even)>.main__article__content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: flex-start;
+    }
+
     .main__article__content__text {
         width: 100%;
     }
