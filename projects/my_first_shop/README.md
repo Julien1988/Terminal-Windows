@@ -5,3 +5,9 @@
 ```bash
 > npm install
 ```
+
+## Launch
+
+```bash
+> yarn dev
+``

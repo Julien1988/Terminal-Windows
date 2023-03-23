@@ -52,7 +52,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myAge;                  // Déclare une variable nommée 'myAge'\r\nmyAge = 17;                 // Attribue la valeur 17 à la variable\r\n\r\nlet myName = \"John\";        // Déclare une variable nommée 'myName' et assigne la valeur \"John\""
+                "let myAge;                  // Déclare une variable nommée 'myAge'\nmyAge = 17;                 // Attribue la valeur 17 à la variable\n\nlet myName = \"John\";        // Déclare une variable nommée 'myName' et assigne la valeur \"John\""
             ],
             "outputs": []
         },
@@ -80,7 +80,7 @@
         {
             "language": "javascript",
             "source": [
-                "const superSecretPassword = \"password123\";  // tout va bien\r\n\r\nsuperSecretPassword = \"newpassword\";        // ! Cela générera une erreur !\r\n\r\nconst newPassword;                          // ! Une variable const ne peut pas être déclarée sans être assignée une valeur !"
+                "const superSecretPassword = \"password123\";  // tout va bien\n\nsuperSecretPassword = \"newpassword\";        // ! Cela générera une erreur !\n\nconst newPassword;                          // ! Une variable const ne peut pas être déclarée sans être assignée une valeur !"
             ],
             "outputs": []
         },
@@ -101,7 +101,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";        // String\r\nlet myAge = 17;             // Number\r\nlet isMajor = false;        // Boolean"
+                "let myName = \"John\";        // String\nlet myAge = 17;             // Number\nlet isMajor = false;        // Boolean"
             ],
             "outputs": []
         },
@@ -122,7 +122,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";\r\nlet myAge = 17;         \r\nlet isMajor = false; \r\n\r\nmyName = \"Johnathan\";\r\nmyAge = myAge + 6;\r\nisMajor = true;"
+                "let myName = \"John\";\nlet myAge = 17;         \nlet isMajor = false; \n\nmyName = \"Johnathan\";\nmyAge = myAge + 6;\nisMajor = true;"
             ],
             "outputs": []
         },
@@ -220,7 +220,7 @@
         {
             "language": "javascript",
             "source": [
-                "function myFunction() { \r\n    \r\n}"
+                "function myFunction() { \n    \n}"
             ],
             "outputs": []
         },
@@ -234,7 +234,7 @@
         {
             "language": "javascript",
             "source": [
-                "function myFunction() {\r\n\r\n}\r\n\r\nmyFunction();"
+                "function myFunction() {\n\n}\n\nmyFunction();"
             ],
             "outputs": []
         },
@@ -248,7 +248,7 @@
         {
             "language": "javascript",
             "source": [
-                "function meow() {\r\n    console.log(\"meow\");\r\n}\r\n\r\nmeow();"
+                "function meow() {\n    console.log(\"meow\");\n}\n\nmeow();"
             ],
             "outputs": []
         },
@@ -507,7 +507,7 @@
         {
             "language": "javascript",
             "source": [
-                "if (condition) {\r\n    //  Bloc de code à exécuter si la condition est vraie (true).\r\n} "
+                "if (condition) {\n    //  Bloc de code à exécuter si la condition est vraie (true).\n} "
             ],
             "outputs": []
         },
@@ -528,28 +528,28 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(\"5 > 3 : \" + (5 > 3));      // => true\r\nconsole.log(\"5 < 4 : \" + (5 < 4));      // => false\r\nconsole.log(\"10 == 10: \" + (10 == 10)); // => true\r\nconsole.log(\"5 != 10: \" + (5 != 10));   // => true\r\n"
+                "console.log(\"5 > 3 : \" + (5 > 3));      // => true\nconsole.log(\"5 < 4 : \" + (5 < 4));      // => false\nconsole.log(\"10 == 10: \" + (10 == 10)); // => true\nconsole.log(\"5 != 10: \" + (5 != 10));   // => true\n"
             ],
             "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "### Examples"
+                "### Example"
             ],
             "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "\r\nNous voulons refuser l'acces a un bar si l'utilisateur est mineur."
+                "\nNous voulons accetper l'acces a un bar si l'utilisateur est majeur."
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "let age = 17;\r\n\r\nif (age >= 18) {\r\n    console.log(\"Bienvenue au bar!\");\r\n}"
+                "let age = 17;\n\nif (age >= 18) {\n    console.log(\"Bienvenue au bar!\");\n}"
             ],
             "outputs": []
         },
@@ -557,6 +557,55 @@
             "language": "markdown",
             "source": [
                 "## L'instruction \"else\""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les blocs else sont des blocs de code qui seront executer uniquement si un bloc if n'a pas été executé"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Syntaxe"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "if (condition) {\n    //  Bloc de code à exécuter si la condition est vraie (true).\n} else {\n    // Block de code à exècuter si la condition if est fausse (false).\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\nNous voulons accetper l'acces a un bar si l'utilisateur est majeur. Et lui dire de s'en aller si il est mineur"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let age = 17;\n\nif (age >= 18) {\n    console.log(\"Bienvenue au bar!\");\n} else {\n    console.log(\"Vas-t'en!\");\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Boucle"
             ],
             "outputs": []
         }
