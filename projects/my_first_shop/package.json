@@ -1,0 +1,20 @@
+{
+  "name": "my_first_shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.8.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
