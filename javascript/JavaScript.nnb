@@ -80,7 +80,7 @@
         {
             "language": "javascript",
             "source": [
-                "const superSecretPassword = \"password123\";  // tout va bien\n\nsuperSecretPassword = \"newpassword\";        // ! Cela générera une erreur !\n\nconst newPassword;                          // ! Une variable const ne peut pas être déclarée sans être assignée une valeur !"
+                "const superSecretPassword = \"password123\";  // tout va bien\r\n\r\nsuperSecretPassword = \"newpassword\";        // ! Cela générera une erreur !\r\n\r\nconst newPassword;                          // ! Une variable const ne peut pas être déclarée sans être assignée une valeur !"
             ],
             "outputs": []
         },
@@ -101,7 +101,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";        // String\nlet myAge = 17;             // Number\nlet isMajor = false;        // Boolean"
+                "let myName = \"John\";        // String\r\nlet myAge = 17;             // Number\r\nlet isMajor = false;        // Boolean"
             ],
             "outputs": []
         },
@@ -122,7 +122,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";\nlet myAge = 17;         \nlet isMajor = false; \n\nmyName = \"Johnathan\";\nmyAge = myAge + 6;\nisMajor = true;"
+                "let myName = \"John\";\r\nlet myAge = 17;         \r\nlet isMajor = false; \r\n\r\nmyName = \"Johnathan\";\r\nmyAge = myAge + 6;\r\nisMajor = true;"
             ],
             "outputs": []
         },
@@ -220,7 +220,7 @@
         {
             "language": "javascript",
             "source": [
-                "function myFunction() { \n    \n}"
+                "function myFunction() { \r\n    \r\n}"
             ],
             "outputs": []
         },
@@ -234,7 +234,7 @@
         {
             "language": "javascript",
             "source": [
-                "function myFunction() {\n\n}\n\nmyFunction();"
+                "function myFunction() {\r\n\r\n}\r\n\r\nmyFunction();"
             ],
             "outputs": []
         },
@@ -451,6 +451,69 @@
         {
             "language": "markdown",
             "source": [
+                "# Objets, Propriétés et Méthodes"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les objets sont un groupement de variables et de fonctions.\r\n\r\nDans la vrai vie (pas la fausse), une voiture est un objet.\r\n\r\nUne voiture a des propriétés et des méthodes:\r\n\r\n| Propriétés                | Méthodes       \t        |\r\n|-----------------------\t|---------------\t        |\r\n| voiture.nom = Fiat        | voiture.démarer()         |\r\n| voiture.model = 500       | voiture.rouler()        \t|\r\n| voiture.poids = 850kg     | voiture.freiner()         |\r\n| voiture.couleur = blanc   | voiture.eteindre()        |\r\n\r\nToutes les voiture auront les meme propriété **mais** avec des **valeurs** différentes\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Propriété"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour créer un objet avec des propriétés (variables), dans des accolades, ajouter les propriété suivi de leurs valeurs\r\n\r\n> Un objet est un type de valeur donc n'oublier pas de le stocker dans une variable!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const voiture = {\r\n    nom: \"Fiat\",\r\n    model: \"500\",\r\n    poids: \"850Kg\",\r\n    couleur: \"blanc\"\r\n};\r\n\r\nconsole.log(voiture);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les valeurs sont noté en pair de `nom:valeur` (nom et valeur séparer par un double point)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Méthodes"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour créer un objet avec des méthodes (fonction), dans des accolades, ajouter les nom de méthode suivi de leurs fonction\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const personne = {\r\n    nom: \"Pierre\",\r\n    prenom: \"Vildesac\",\r\n    taille: 170,\r\n    poids: 85,\r\n    sePresenter: function() {\r\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`); \r\n    }\r\n};\r\n\r\npersonne.sePresenter();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
                 "# Conditions"
             ],
             "outputs": []
@@ -507,7 +570,7 @@
         {
             "language": "javascript",
             "source": [
-                "if (condition) {\n    //  Bloc de code à exécuter si la condition est vraie (true).\n} "
+                "if (condition) {\r\n    //  Bloc de code à exécuter si la condition est vraie (true).\r\n} "
             ],
             "outputs": []
         },
@@ -528,7 +591,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(\"5 > 3 : \" + (5 > 3));      // => true\nconsole.log(\"5 < 4 : \" + (5 < 4));      // => false\nconsole.log(\"10 == 10: \" + (10 == 10)); // => true\nconsole.log(\"5 != 10: \" + (5 != 10));   // => true\n"
+                "console.log(\"5 > 3 : \" + (5 > 3));      // => true\r\nconsole.log(\"5 < 4 : \" + (5 < 4));      // => false\r\nconsole.log(\"10 == 10: \" + (10 == 10)); // => true\r\nconsole.log(\"5 != 10: \" + (5 != 10));   // => true\r\n"
             ],
             "outputs": []
         },
@@ -549,7 +612,7 @@
         {
             "language": "javascript",
             "source": [
-                "let age = 17;\n\nif (age >= 18) {\n    console.log(\"Bienvenue au bar!\");\n}"
+                "let age = 17;\r\n\r\nif (age >= 18) {\r\n    console.log(\"Bienvenue au bar!\");\r\n}"
             ],
             "outputs": []
         },
@@ -577,7 +640,7 @@
         {
             "language": "javascript",
             "source": [
-                "if (condition) {\n    //  Bloc de code à exécuter si la condition est vraie (true).\n} else {\n    // Block de code à exècuter si la condition if est fausse (false).\n}"
+                "if (condition) {\r\n    //  Bloc de code à exécuter si la condition est vraie (true).\r\n} else {\r\n    // Block de code à exècuter si la condition if est fausse (false).\r\n}"
             ],
             "outputs": []
         },
@@ -598,7 +661,7 @@
         {
             "language": "javascript",
             "source": [
-                "let age = 17;\n\nif (age >= 18) {\n    console.log(\"Bienvenue au bar!\");\n} else {\n    console.log(\"Vas-t'en!\");\n}"
+                "let age = 17;\r\n\r\nif (age >= 18) {\r\n    console.log(\"Bienvenue au bar!\");\r\n} else {\r\n    console.log(\"Vas-t'en!\");\r\n}"
             ],
             "outputs": []
         },
