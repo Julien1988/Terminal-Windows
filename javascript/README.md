@@ -16,7 +16,7 @@ cd CEDEG
 code ./javascript
 ```
 
-### Les exercices
+## Les exercices
 
 Plusieurs exercices sont disponible dans le fichier [exercices](./exercices).
 
