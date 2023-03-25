@@ -14,7 +14,7 @@ area = PI * radius * radius;
 // Print out the area of the circle
 console.log("The area of the circle is: " + area);
 
-// Change the value of the radius variable
+
 radius = 7;
 
 // Recalculate the area of the circle using the same formula
@@ -23,18 +23,67 @@ area = PI * radius * radius;
 // Print out the new area of the circle
 console.log("The new area of the circle is: " + area);
 
-// Declare a let variable
+
 const num = 10;
 
-// Try to change the value of the constant variable
-// This will result in an error because constants cannot be reassigned
-// PI = 3.14;
 
 // Print out the value of the num variable
 console.log("The value of num is: " + num);
 
-// Change the value of the num variable
+
 num = 15;
 
 // Print out the new value of the num variable
 console.log("The new value of num is: " + num);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIN DE L'EXERCICE: NE PAS MODIFIER EN DESSOUS DE CETTE LIGNE */
+
+
+
+const chalk = require("chalk");
+
+
+function getVariableDeclarationType(variableName) {
+    const stackTrace = new Error().stack;
+    const pattern = new RegExp(`\\b(const|let)\\s+${variableName}\\b`);
+    const match = stackTrace.match(pattern);
+
+    if (match && match.length > 0) {
+        return match[1]; // Returns "const" or "let"
+    } else {
+        return null; // Variable not found or not declared using "const" or "let"
+    }
+}
+
+/**
+ * 
+ * @param {string} variableName 
+ * @param {"const" | "let"} type 
+ */
+function check(variableName, type) {
+    return getVariableDeclarationType(variableName) == type ?
+        chalk.green(`Variable ${variableName} est déclarer avec ${type}`) :
+        chalk.red(`Variable ${variableName} n'est pas déclarer avec ${type}`);
+}
+
+console.log();
+console.log(check("PI", "const"));
+console.log(check("radius", "let"));
+console.log(check("area", "let"));
+console.log(check("num", "let"));
+

@@ -4,4 +4,4 @@
 
 - [VSCode](./vscode/README.md): Trucs sur vscode (extensions, emmet)
 
-- [JavaScript](./javascript): Notebook Javascript
+- [JavaScript](./javascript): Notebook Javascript, examples et exercices
