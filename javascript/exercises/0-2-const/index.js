@@ -77,8 +77,8 @@ function getVariableDeclarationType(variableName) {
  */
 function check(variableName, type) {
     return getVariableDeclarationType(variableName) == type ?
-        chalk.green(`Variable ${variableName} est déclarer avec ${type}`) :
-        chalk.red(`Variable ${variableName} n'est pas déclarer avec ${type}`);
+        chalk.green(`✓ Variable ${variableName} est déclarer avec ${type}`) :
+        chalk.red(`✗ Variable ${variableName} n'est pas déclarer avec ${type}`);
 }
 
 console.log();

@@ -1,12 +1,9 @@
 # Exercice 0-3: Operateurs
 
-## Situation
-
-
-
 ## Exercice
 
-Remplace les déclarateurs de variables par let ou const dans [index.js](./index.js) en fonction de la situation.
+Complete le fichier [index.js](./index.js) en suivant les instructions donné en
+commentaire.
 
 ## Lancer le script
 
