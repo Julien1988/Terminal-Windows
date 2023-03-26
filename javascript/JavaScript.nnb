@@ -80,7 +80,7 @@
         {
             "language": "javascript",
             "source": [
-                "const superSecretPassword = \"password123\";  // tout va bien\r\n\r\nsuperSecretPassword = \"newpassword\";        // ! Cela générera une erreur !\r\n\r\nconst newPassword;                          // ! Une variable const ne peut pas être déclarée sans être assignée une valeur !"
+                "const superSecretPassword = \"password123\";  // tout va bien\n\nsuperSecretPassword = \"newpassword\";        // ! Cela générera une erreur !\n\nconst newPassword;                          // ! Une variable const ne peut pas être déclarée sans être assignée une valeur !"
             ],
             "outputs": []
         },
@@ -101,7 +101,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";        // String\r\nlet myAge = 17;             // Number\r\nlet isMajor = false;        // Boolean"
+                "let myName = \"John\";        // String\nlet myAge = 17;             // Number\nlet isMajor = false;        // Boolean"
             ],
             "outputs": []
         },
@@ -122,7 +122,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";\r\nlet myAge = 17;         \r\nlet isMajor = false; \r\n\r\nmyName = \"Johnathan\";\r\nmyAge = myAge + 6;\r\nisMajor = true;"
+                "let myName = \"John\";\nlet myAge = 17;         \nlet isMajor = false; \n\nmyName = \"Johnathan\";\nmyAge = myAge + 6;\nisMajor = true;"
             ],
             "outputs": []
         },
@@ -136,7 +136,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myAge = 17;\r\n\r\nmyAge = myAge + 6"
+                "let myAge = 17;\n\nmyAge = myAge + 6"
             ],
             "outputs": []
         },
@@ -150,7 +150,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myAge = 17;\r\n\r\nmyAge = 17 + 6;  // myAge = myAge + 6 "
+                "let myAge = 17;\n\nmyAge = 17 + 6;  // myAge = myAge + 6 "
             ],
             "outputs": []
         },
@@ -164,7 +164,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myAge = 17;\r\n\r\nmyAge += 6;      // equivalent of doing: myAge = myAge + 6"
+                "let myAge = 17;\n\nmyAge += 6;      // equivalent of doing: myAge = myAge + 6"
             ],
             "outputs": []
         },
@@ -220,7 +220,7 @@
         {
             "language": "javascript",
             "source": [
-                "function myFunction() { \r\n    \r\n}"
+                "function myFunction() { \n    \n}"
             ],
             "outputs": []
         },
@@ -234,7 +234,7 @@
         {
             "language": "javascript",
             "source": [
-                "function myFunction() {\r\n\r\n}\r\n\r\nmyFunction();"
+                "function myFunction() {\n\n}\n\nmyFunction();"
             ],
             "outputs": []
         },
@@ -311,7 +311,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";\r\n\r\nconsole.log(myName);"
+                "let myName = \"John\";\n\nconsole.log(myName);"
             ],
             "outputs": []
         },
@@ -325,7 +325,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";\r\n\r\nconsole.log(\"Bonjour \" + myName);"
+                "let myName = \"John\";\n\nconsole.log(\"Bonjour \" + myName);"
             ],
             "outputs": []
         },
@@ -339,7 +339,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\"\r\nlet myAge = 17;\r\nlet address = \"Rue de Landen 53A, 4280 Hannut\";     // Oui, John habbite au McDo de hannut \r\n\r\nconsole.log(\"Bonjour, je m'appelle \" + myName + \", J'ai \" + myAge + \" ans et j'habite à \" + address);"
+                "let myName = \"John\"\nlet myAge = 17;\nlet address = \"Rue de Landen 53A, 4280 Hannut\";     // Oui, John habbite au McDo de hannut \n\nconsole.log(\"Bonjour, je m'appelle \" + myName + \", J'ai \" + myAge + \" ans et j'habite à \" + address);"
             ],
             "outputs": []
         },
@@ -353,21 +353,21 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";\r\nlet myAge = 17;\r\nlet address = \"Rue de Landen 53A, 4280 Hannut\";\r\n\r\nconsole.log(`Bonjour, je m'appelle ${myName}, J'ai ${myAge} ans et j'habite à ${livesIn}`);"
+                "let myName = \"John\";\nlet myAge = 17;\nlet address = \"Rue de Landen 53A, 4280 Hannut\";\n\nconsole.log(`Bonjour, je m'appelle ${myName}, J'ai ${myAge} ans et j'habite à ${livesIn}`);"
             ],
             "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "Maintenant c'est plus facile à lire !\r\n\r\nPour utiliser **l'interpolation de chaîne** (string interpolation), nous utilisons des backticks (`\\`) au lieu de simples ou doubles guillemets ('' ou \"\"). Et `${}` lors de la définition d'une variable."
+                "Maintenant c'est plus facile à lire !\n\nPour utiliser `l'interpolation de chaîne` (string interpolation), nous utilisons des backticks (`\\`) au lieu de simples ou doubles guillemets ('' ou \"\"). Et `${}` lors de la définition d'une variable."
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";\r\n\r\nlet myGreeting = \"Bonjour tout le monde! Je m'appelle \" + myName\r\n\r\nlet interpolatedString = `Bonjour tout le monde! Je m'appelle ${myName}`;"
+                "let myName = \"John\";\n\nlet myGreeting = \"Bonjour tout le monde! Je m'appelle \" + myName\n\nlet interpolatedString = `Bonjour tout le monde! Je m'appelle ${myName}`;"
             ],
             "outputs": []
         },
@@ -388,7 +388,7 @@
         {
             "language": "javascript",
             "source": [
-                "let totalVisitors = 0;\r\n\r\n// Person enters the shop\r\nconsole.log(\"Hello! Welcome to our shop\");\r\ntotalVisitors+=1;\r\n\r\n// Person enters the shop\r\nconsole.log(\"Hello! Welcome to our shop\");\r\ntotalVisitors += 1;\r\n\r\n// Person enters the shop\r\nconsole.log(\"Hello! Welcome to our shop\");\r\ntotalVisitors += 1;\r\n\r\n// Person enters the shop\r\nconsole.log(\"Hello! Welcome to our shop\");\r\ntotalVisitors += 1;\r\n"
+                "let totalVisitors = 0;\n\n// Person enters the shop\nconsole.log(\"Hello! Welcome to our shop\");\ntotalVisitors+=1;\n\n// Person enters the shop\nconsole.log(\"Hello! Welcome to our shop\");\ntotalVisitors += 1;\n\n// Person enters the shop\nconsole.log(\"Hello! Welcome to our shop\");\ntotalVisitors += 1;\n\n// Person enters the shop\nconsole.log(\"Hello! Welcome to our shop\");\ntotalVisitors += 1;\n"
             ],
             "outputs": []
         },
@@ -402,7 +402,7 @@
         {
             "language": "javascript",
             "source": [
-                "function greetPerson() {\r\n    totalVisitors += 1;\r\n    console.log(\"Hello! Welcome to our shop\");\r\n}\r\n\r\nlet totalVisitors = 0;\r\n\r\n// Person enters the shop\r\ngreetPerson();\r\n\r\n// Person enters the shop\r\ngreetPerson();\r\n"
+                "function greetPerson() {\n    totalVisitors += 1;\n    console.log(\"Hello! Welcome to our shop\");\n}\n\nlet totalVisitors = 0;\n\n// Person enters the shop\ngreetPerson();\n\n// Person enters the shop\ngreetPerson();\n"
             ],
             "outputs": []
         },
@@ -416,7 +416,7 @@
         {
             "language": "javascript",
             "source": [
-                "function greetPerson(name) {\r\n    console.log(`Hello ${name}! Welcome to our shop`);\r\n}\r\n\r\nlet person1 = \"Jack\";\r\nlet person2 = \"Bob\";\r\nlet person3 = \"Alexander\";\r\n\r\ngreetPerson(person1);\r\ngreetPerson(person2);\r\ngreetPerson(person3);\r\n\r\n"
+                "function greetPerson(name) {\n    console.log(`Hello ${name}! Welcome to our shop`);\n}\n\nlet person1 = \"Jack\";\nlet person2 = \"Bob\";\nlet person3 = \"Alexander\";\n\ngreetPerson(person1);\ngreetPerson(person2);\ngreetPerson(person3);\n\n"
             ],
             "outputs": []
         },
@@ -430,7 +430,7 @@
         {
             "language": "javascript",
             "source": [
-                "function greetPerson(name) {\r\n    console.log(`Hello ${name}! Welcome to our shop`);\r\n}\r\n\r\ngreetPerson(\"John\");"
+                "function greetPerson(name) {\n    console.log(`Hello ${name}! Welcome to our shop`);\n}\n\ngreetPerson(\"John\");"
             ],
             "outputs": []
         },
@@ -444,7 +444,70 @@
         {
             "language": "javascript",
             "source": [
-                "function greetPerson(name) {\r\n    console.log(`Hello ${name}! Welcome to our shop`);\r\n}\r\n\r\ngreetPerson(24);"
+                "function greetPerson(name) {\n    console.log(`Hello ${name}! Welcome to our shop`);\n}\n\ngreetPerson(24);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Return"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Le mot clé `return` permet de retourner une valeur a partir d'une fonction"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Nous avons une fonction `calculAireCarre` qui prend en parametre une hauteur et une largeur et retourne l'aire du caré"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function calculAireCarre(largeur, hauteur) {\n    return largeur * hauteur\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Si nous donnons une largeur de 10 et une hauteur de 5 a la fonction, elle retournera 50"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function calculAireCarre(largeur, hauteur) {\n    return largeur * hauteur\n}\n\nconst aireCarre = calculAireCarre(10, 5);\n\nconsole.log(`Aire du carré: ${aireCarre}`);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Ici, créer une variable n'est pas néscessaire. En effet, nous pouvons simplement executer la fonction depuis le `console.log()`"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function calculAireCarre(largeur, hauteur) {\n    return largeur * hauteur\n}\n\nconsole.log(`Aire du carré: ${calculAireCarre(10, 5) }`);"
             ],
             "outputs": []
         },
@@ -479,7 +542,7 @@
         {
             "language": "javascript",
             "source": [
-                "const voiture = {\r\n    nom: \"Fiat\",\r\n    model: \"500\",\r\n    poids: \"850Kg\",\r\n    couleur: \"blanc\"\r\n};\r\n\r\nconsole.log(voiture);"
+                "const voiture = {\n    nom: \"Fiat\",\n    model: \"500\",\n    poids: \"850Kg\",\n    couleur: \"blanc\"\n};\n\nconsole.log(voiture);"
             ],
             "outputs": []
         },
@@ -507,7 +570,7 @@
         {
             "language": "javascript",
             "source": [
-                "const personne = {\r\n    nom: \"Pierre\",\r\n    prenom: \"Vildesac\",\r\n    taille: 170,\r\n    poids: 85,\r\n    sePresenter: function() {\r\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`); \r\n    }\r\n};\r\n\r\npersonne.sePresenter();"
+                "const personne = {\n    nom: \"Pierre\",\n    prenom: \"Vildesac\",\n    taille: 170,\n    poids: 85,\n    sePresenter: function() {\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`); \n    }\n};\n\npersonne.sePresenter();"
             ],
             "outputs": []
         },
@@ -570,7 +633,7 @@
         {
             "language": "javascript",
             "source": [
-                "if (condition) {\r\n    //  Bloc de code à exécuter si la condition est vraie (true).\r\n} "
+                "if (condition) {\n    //  Bloc de code à exécuter si la condition est vraie (true).\n} "
             ],
             "outputs": []
         },
@@ -591,7 +654,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(\"5 > 3 : \" + (5 > 3));      // => true\r\nconsole.log(\"5 < 4 : \" + (5 < 4));      // => false\r\nconsole.log(\"10 == 10: \" + (10 == 10)); // => true\r\nconsole.log(\"5 != 10: \" + (5 != 10));   // => true\r\n"
+                "console.log(\"5 > 3 : \" + (5 > 3));      // => true\nconsole.log(\"5 < 4 : \" + (5 < 4));      // => false\nconsole.log(\"10 == 10: \" + (10 == 10)); // => true\nconsole.log(\"5 != 10: \" + (5 != 10));   // => true\n"
             ],
             "outputs": []
         },
@@ -612,7 +675,7 @@
         {
             "language": "javascript",
             "source": [
-                "let age = 17;\r\n\r\nif (age >= 18) {\r\n    console.log(\"Bienvenue au bar!\");\r\n}"
+                "let age = 17;\n\nif (age >= 18) {\n    console.log(\"Bienvenue au bar!\");\n}"
             ],
             "outputs": []
         },
@@ -640,7 +703,7 @@
         {
             "language": "javascript",
             "source": [
-                "if (condition) {\r\n    //  Bloc de code à exécuter si la condition est vraie (true).\r\n} else {\r\n    // Block de code à exècuter si la condition if est fausse (false).\r\n}"
+                "if (condition) {\n    //  Bloc de code à exécuter si la condition est vraie (true).\n} else {\n    // Block de code à exècuter si la condition if est fausse (false).\n}"
             ],
             "outputs": []
         },
@@ -661,14 +724,224 @@
         {
             "language": "javascript",
             "source": [
-                "let age = 17;\r\n\r\nif (age >= 18) {\r\n    console.log(\"Bienvenue au bar!\");\r\n} else {\r\n    console.log(\"Vas-t'en!\");\r\n}"
+                "let age = 17;\n\nif (age >= 18) {\n    console.log(\"Bienvenue au bar!\");\n} else {\n    console.log(\"Vas-t'en!\");\n}"
             ],
             "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "# Boucle"
+                "# Boucles, itératiosn et arrays"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les boucles offrent un moyen facile et rapide de faire quelque chose répétivement.\n\nIl y a different types de boucles, mais elles font toutes essentiellement la même chose: elles répètent une action pour un certain nombre de fois\n\nLes boucles sont très souvent utilisées pour itérer des arrays."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Arrays"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Un array est un type de variable qui contient une liste de valeurs.\n\nL'array peut contenir une liste de valeurs de type different cependant il est recommander de ne pas faire d'array qui contiennent des types de valeurs differents"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Créer un array"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour créer un array, déclarer une variable (generalement const[^1]), suivi d'une liste.\n\n[^1]: L'ordinateur gère differement les array des variables. Bien que const, l'array peut toujours etre modifier."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Syntaxe"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Déclarer une variable, assigner une liste créer avec `[]`. Chaques valeurs dans cette liste doivent êtres séparé par une virgule"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "##### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nconsole.log(fruits);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Utiliser un array"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour accèder au valeurs contenu dans un array, ajouter des crochets (`[]`) après le nom de la variable.\n\nA l'interieur des crochets, ajouter l'indexe / la position de l'element que vous voulez acceder.\n\n> Attention! L'indexe d'un array commence a 0 et non a 1. Donc `array[1]` retournera le **deuxieme** elements de l'array"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nconsole.log(fruits[0]);\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Index out of bounds exeptions"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\"Index out of bounds exception\" est probablement l'erreur la plus courante en programations. Elle signifie que nous essayons d'acceder a un element qui est en dehors de la liste."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nconsole.log(fruits[99]);    // ! Il n'y a pas d'element a la position 99 de l'array"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Ici, Javascript nous donnes une valeur non définie (`undefined`) à la place d'une erreur. Cela peut rendre le déboguage d'une application beaucoup plus pénible. Malheureusement, nous ne pouvons rien y faire. C'est l'un des défauts de Javascript."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Boucles et itérations"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les boucles et les itérations permettent d'exécuter du code répétitivement rapidement et simplement. Ainsi que d'itérer un array."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Boucle for"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une boucle for prend trois \"arguments\", une expressionInitiale, une condition et une expressionFinale."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "for (expressionInitiale; condition; expressionFinale) {\n    // code\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "L'expression initiale initialise une variable.\nLa condition est une expression booléenne qui dicte la fin de la boucle.\nL'expression finale est une expression qui est executer a la fin de chaque iteration de la boucle."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "L'expression initiale est généralement nommé `i` ou `index` et est assignée la valeur `0`.\n\nLa condition dicte le nombre de foix que la boucle sera executer. Ici, 10 fois.\n\nL'expression finale incrémente (rajoute 1) a notre variable `i`."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "for (let i = 0; i < 10; i++) {\n    console.log(i);\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Ici, nous écrivons dans la console chaque valeurs contenue dans l'array `fruits`"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nfor (let i = 0; i < fruits.length; i++) {\n    const fruit = fruits[i];\n\n    console.log(fruit);\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "> `length` est une propriété de l'array qui contient la taille de celui-ci. Cela permet de ne pas acceder a des valeurs en dehors de l'array."
             ],
             "outputs": []
         }

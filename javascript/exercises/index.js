@@ -39,8 +39,6 @@ fs.readFile(scriptPath, 'utf8', (err, data) => {
     // Execute the script
     try {
         eval(data);
-        // console.error(chalk.green(`\nBravo! Le script ne contient aucune erreur`));
-
     } catch (err) {
         console.error(chalk.red(`\nErreur: Une erreur est présente dans le code: \n\n${err}`));
         process.exit(1);
