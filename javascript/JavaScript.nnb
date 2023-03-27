@@ -591,7 +591,7 @@
         {
             "language": "markdown",
             "source": [
-                "| Opérateur | Descriptions              | Exemple       \t        |\r\n|---------\t|-----------------------\t|---------------\t        |\r\n| <\t        | est inférieur à           | `5 < 10`                  |\r\n| >         | est supérieur à         \t| `10 > 1`         \t        |\r\n| <=  \t    | est inférieur ou égal à   | `4 <= 10` <br> `4 <= 4`   |\r\n| >=  \t    | est supérieur ou égal à   | `4 >= 2` <br> `4 >= 4`    |\r\n| ==        | est égal à                | `\"john\" == \"john\"`        |\r\n| !=        | est different de          | `\"john\" != \"pierre\"`      |\r\n> Tout les examples équivale la valeur `true`"
+                "Opérateurs d'expression booléenne \n\n| Opérateur | Descriptions              | Exemple       \t        |\n|---------\t|-----------------------\t|---------------\t        |\n| <\t        | est inférieur à           | `5 < 10`                  |\n| >         | est supérieur à         \t| `10 > 1`         \t        |\n| <=  \t    | est inférieur ou égal à   | `4 <= 10` <br> `4 <= 4`   |\n| >=  \t    | est supérieur ou égal à   | `4 >= 2` <br> `4 >= 4`    |\n| ==        | est égal à                | `\"john\" == \"john\"`        |\n| !=        | est different de          | `\"john\" != \"pierre\"`      |\n> Tout les examples équivale la valeur `true`"
             ],
             "outputs": []
         },
@@ -731,7 +731,7 @@
         {
             "language": "markdown",
             "source": [
-                "# Boucles, itératiosn et arrays"
+                "# Boucles, itérations et arrays"
             ],
             "outputs": []
         },
@@ -878,6 +878,55 @@
         {
             "language": "markdown",
             "source": [
+                "### Boucle while"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une boucle while execute du code jusqu'à ce qu'une condition soit remplie."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "while (condition) {\n    // code\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "La condition est une expression booléenne qui définit l'execution du bloc de code"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Example\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let i = 0;\nwhile (i < 10) {\n    console.log(n);\n    i++;\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nlet i = 0;\nwhile (i < fruits.length) {\n    const fruit = fruits[i];\n\n    console.log(fruit);\n\n    i++;\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
                 "### Boucle for"
             ],
             "outputs": []
@@ -885,7 +934,7 @@
         {
             "language": "markdown",
             "source": [
-                "Une boucle for prend trois \"arguments\", une expressionInitiale, une condition et une expressionFinale."
+                "Une boucle `for` prend trois \"arguments\", une expressionInitiale, une condition et une expressionFinale."
             ],
             "outputs": []
         },
