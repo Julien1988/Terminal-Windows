@@ -94,7 +94,7 @@
         {
             "language": "markdown",
             "source": [
-                "Lorsqu'une variable est créée, son type est déduit à partir de la valeur qui lui est attribuée.\r\n\r\nVoici les différents types de valeurs :\r\n\r\n| Type    \t                        | Valeur                 \t| Exemple       \t    |\r\n|---------\t                        |-----------------------\t|---------------\t    |\r\n| Boolean (Booléen)\t                | `True` ou `False`         | `True`          \t    |\r\n| Number (Nombre) \t                | N'importe quel nombre     | `-56.2`         \t    |\r\n| String (Chaîne de caractères)  \t| Une chaîne de caractères \t| `\"Bonjour le monde\"` \t|\r\n\r\n> Note : une valeur de chaîne de caractères sera toujours entre guillemets simples/doubles."
+                "Lorsqu'une variable est créée, son type est déduit à partir de la valeur qui lui est attribuée.\n\nVoici les différents types de valeurs :\n\n| Type    \t                        | Valeur                 \t| Exemple       \t    |\n|---------\t                        |-----------------------\t|---------------\t    |\n| Boolean (Booléen)\t                | `true` ou `false`         | `true`          \t    |\n| Number (Nombre) \t                | N'importe quel nombre     | `-56.2`         \t    |\n| String (Chaîne de caractères)  \t| Une chaîne de caractères \t| `\"Bonjour le monde\"` \t|\n\n> Note : une valeur de chaîne de caractères sera toujours entre guillemets simples/doubles."
             ],
             "outputs": []
         },
