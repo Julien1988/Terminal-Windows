@@ -1,12 +1,11 @@
-/* Corrige la syntaxe des variables ci-dessous */
+// Créé les variables suivantes:
+// une appellé 'myName' qui contient ton nom
+// une appellé 'mySurname' qui contient ton nom de famille
+// une appellé 'myAge' qui contient ton age
+// une appellé 'isRich' qui dit si oui ou non tu es un millionaire
+// une appellé 'myCreditCard' qui contient le numéro de ta carte bancaire, la date d'expiration et les trois chiffres a l'arriere
 
-nom = John;
 
-age = 25
-
-estMajeur = vrai
-
-addresseDeJohn = Rue du boulanger, 27;
 
 
 
@@ -38,9 +37,8 @@ addresseDeJohn = Rue du boulanger, 27;
 const chalk = require("chalk");
 
 
-console.log(chalk.green(`nom: '${nom}'`));
-console.log(chalk.green(`age: ${age}`));
-console.log(chalk.green(`estMajeur: ${estMajeur}`));
-console.log(chalk.green(`addresseDeJohn: '${addresseDeJohn}'`));
-
-console.log(chalk.green(`\nBravo! `));
+console.log(chalk.green(`prenom: '${myName}'`));
+console.log(chalk.green(`nom: '${mySurname}'`));
+console.log(chalk.green(`age: ${myAge}`));
+console.log(chalk.green(`est riche?: ${isRich}`));
+console.log(chalk.red(`numéro carte crédit invalide :(`));

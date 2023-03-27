@@ -9,9 +9,8 @@
 ## Fonctions
 
 1. [Correction de Syntaxe](./1-1-syntaxe/)
-1. [Donner des parametres](./1-2-parameters/)
-1. [Créer et utiliser des parametres](./1-3-parameters/)
-1. [Le mot clé return](./1-4-return/)
+1. [Créer et utiliser des parametres](./1-2-parameters/)
+1. [Le mot clé return](./1-3-return/)
 
 ## Objets, Propriété et Méthodes
 

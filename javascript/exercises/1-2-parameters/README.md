@@ -1,4 +1,4 @@
-# Exercice 0-0: exercice
+# Exercice 1-2: Paramètres
 
 ## Exercice
 
