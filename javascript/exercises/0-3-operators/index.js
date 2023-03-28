@@ -72,8 +72,8 @@ const chalk = require("chalk");
 function check(variable, variableName, expectedValue) {
 
     checkVariableValue(variable, expectedValue) ?
-        console.log(chalk.green(`✓ ${variableName} a la valeur attendue.`)) :
-        console.log(chalk.red(`✗ ${variableName} n'a pas la valeur attendue: reçu ${variable} expecté ${expectedValue}`));
+        console.log(chalk.green(`✓ ${variableName}: ${expectedValue}`)) :
+        console.log(chalk.red(`✗ ${variableName}: reçu ${variable} expecté ${expectedValue}`));
 
 }
 
