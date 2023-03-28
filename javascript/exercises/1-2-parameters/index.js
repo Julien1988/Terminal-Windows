@@ -1,4 +1,4 @@
-// créé une fonction appellé 'add' qui prend deux paramètres:
+// Crée une fonction appellé 'add' qui prend deux paramètres:
 // a => le premier terme
 // b => le second terme
 // et écrit dans la console l'addition suivit du resultat
@@ -10,7 +10,7 @@
 
 
 
-// Dans le même style, créé une fonction appellé 'substract'
+// Dans le même style, Crée une fonction appellé 'substract'
 
 
 

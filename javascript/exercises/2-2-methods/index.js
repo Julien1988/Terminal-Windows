@@ -1,4 +1,4 @@
-// créé un objet avec un nom, prenom et age
+// Crée un objet avec un nom, prenom et age
 // ainsi qu'une méthode 'sePresenter' qui presente l'utilisateur dans la console.
 
 

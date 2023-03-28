@@ -1,4 +1,4 @@
-// créé une fonction appellé 'square' qui retourne le carré d'un nombre
+// Crée une fonction appellé 'square' qui retourne le carré d'un nombre
 // example: (6) => 36
 
 
@@ -6,7 +6,7 @@
 
 
 
-// créé une fonction appellé 'circleSurface' qui calcule la surface d'un cercle (PI*r²)
+// Crée une fonction appellé 'circleSurface' qui calcule la surface d'un cercle (PI*r²)
 // arrondi PI a 3.14
 // paramètres:
 // r => le rayon du cercle

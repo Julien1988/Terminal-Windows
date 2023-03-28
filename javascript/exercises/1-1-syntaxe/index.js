@@ -1,4 +1,4 @@
-// créé une fonction appellé 'direBonjour' qui envoie "Bonjour!" dans la console.
+// Crée une fonction appellé 'direBonjour' qui envoie "Bonjour!" dans la console.
 
 
 
@@ -13,7 +13,7 @@
 
 
 
-// créé une fonction appellé 'direAurevoir'
+// Crée une fonction appellé 'direAurevoir'
 
 
 

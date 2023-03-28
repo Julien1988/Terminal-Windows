@@ -1,4 +1,4 @@
-// Créé les variables suivantes:
+// Crée les variables suivantes:
 // une appellé 'myName' qui contient ton nom
 // une appellé 'mySurname' qui contient ton nom de famille
 // une appellé 'myAge' qui contient ton age
