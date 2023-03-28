@@ -10,5 +10,5 @@ commentaire.
 Pour lancer le script execute cette commande dans le terminal:
 
 ```bash
-npm run exercise 0-0-exercise
+npm run exercise 1-3-return
 ```

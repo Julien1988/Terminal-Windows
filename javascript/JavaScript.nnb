@@ -927,6 +927,13 @@
         {
             "language": "markdown",
             "source": [
+                "> `length` est une propriété de l'array qui contient la taille de celui-ci. Cela permet de ne pas acceder a des valeurs en dehors de l'array."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
                 "### Boucle for"
             ],
             "outputs": []
@@ -984,13 +991,6 @@
             "language": "javascript",
             "source": [
                 "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nfor (let i = 0; i < fruits.length; i++) {\n    const fruit = fruits[i];\n\n    console.log(fruit);\n}"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "> `length` est une propriété de l'array qui contient la taille de celui-ci. Cela permet de ne pas acceder a des valeurs en dehors de l'array."
             ],
             "outputs": []
         }
