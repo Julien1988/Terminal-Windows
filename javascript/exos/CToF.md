@@ -6,15 +6,11 @@ Vous avez pour tâche de créer un programme qui convertit une température de C
 
 La fonction `celsiusToFahrenheit` doit prendre un paramètre `celsiusTemp` (un nombre) et renvoyer la température équivalente en Fahrenheit.
 
-```javascript
-function celsiusToFahrenheit(celsiusTemp)
-```
-
 # Exemple
 
 ## Entrée
 
-```js
+```javascript
 const celsius = 25;
 const result = celsiusToFahrenheit(celsius);
 console.log(result);

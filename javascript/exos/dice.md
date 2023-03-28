@@ -6,10 +6,6 @@ Vous devez créer un programme qui simule un jet de dé. Le programme doit décl
 
 La fonction `rollDice` doit prendre un paramètre `numSides` et renvoyer un entier aléatoire entre 1 et `numSides`.
 
-```javascript
-function rollDice(numSides)
-```
-
 # Exemple
 
 ## Entrée
