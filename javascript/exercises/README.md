@@ -14,17 +14,20 @@
 
 ## Objets, Propriété et Méthodes
 
-1. [Objets](./2-1-objects/)
-1. [Propriété](./2-2-property/)
-1. [Méthodes](./2-3-methods/)
+1. [Propriété](./2-1-properties//)
+1. [Méthodes](./2-2-methods//)
+1. [Mot clé this](./2-3-this//)
+
+## Conditions
+
+1. [if](./3-1-if/)
+1. [else](./3-2-else/)
 
 ## Array et Boucles
 
-1. [Arrays](./3-1-arrays/)
-1. [if](./3-2-if/)
-1. [else](./3-3-else/)
-1. [boucle while](./4-1-while/)
-1. [boucle for](./4-2-for/)
+1. [Arrays](./4-1-arrays/)
+1. [boucle while](./4-2-while/)
+1. [boucle for](./4-3-for/)
 
 ## Installation / Lancement
 
