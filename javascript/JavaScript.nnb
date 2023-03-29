@@ -3,7 +3,7 @@
         {
             "language": "markdown",
             "source": [
-                "# Les Variables\r\n\r\n\r\n "
+                "# Les Variables\n\n\n "
             ],
             "outputs": []
         },
@@ -542,14 +542,14 @@
         {
             "language": "javascript",
             "source": [
-                "const voiture = {\n    nom: \"Fiat\",\n    model: \"500\",\n    poids: \"850Kg\",\n    couleur: \"blanc\"\n};\n\nconsole.log(voiture);"
+                "const voiture = {\n    nom: \"Fiat\",\n    model: \"500\",\n    poids: \"850Kg\",\n    couleur: \"blanc\"\n};\n\nconsole.log(voiture.nom);"
             ],
             "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "Les valeurs sont noté en pair de `nom:valeur` (nom et valeur séparer par un double point)"
+                "Les valeurs sont noté en pair de `nom:valeur` (nom et valeur séparer par un double point).\nPour acceder une propriété d'un objet, ajouter un point suivi du nom de la propriété voulue a la suite de la variable."
             ],
             "outputs": []
         },
@@ -571,6 +571,62 @@
             "language": "javascript",
             "source": [
                 "const personne = {\n    nom: \"Pierre\",\n    prenom: \"Vildesac\",\n    taille: 170,\n    poids: 85,\n    sePresenter: function() {\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`); \n    }\n};\n\npersonne.sePresenter();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour appeller une méthode d'un objet, ajouter un point suivi du nom de la méthode voulue a la suite de la variable."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Arrow function and function"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Il y a en réalité deux façons différente de créé une function:\n- Avec le mot clé `function`\n- Avec une flêche"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function hello() {\n    console.log(\"hello\");\n};\n\nconst world = () => {\n    console.log(\"world\");\n};\n\nhello();\nworld();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Quel est la différence?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "La différence entre une function et arrow function revient au mot clé `this`.\nDans une fonction normale, le mot clé `this` représente le **parent** de la fonction.\nAlors que dans une arrow function, le mot clé `this` représente le **parent** de la position ou elle a été appellé."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const personne = {\n    nom: \"Pierre\",\n    prenom: \"Vildesac\",\n    taille: 170,\n    poids: 85,\n    sePresenter: function () {\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`);\n    },\n    sePresenterArrow: () => {\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`);\n    },\n    foo: function () {\n        console.log(\"from function: \", this);\n        const bar = () => {\n            console.log(\"from arrow function: \", this);\n        }\n\n        bar();\n    }\n};\n\npersonne.sePresenter();\npersonne.sePresenterArrow();\n\npersonne.foo();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "https://dmitripavlutin.com/differences-between-arrow-and-regular-functions/"
             ],
             "outputs": []
         },
@@ -766,7 +822,7 @@
         {
             "language": "markdown",
             "source": [
-                "Pour créer un array, déclarer une variable (generalement const[^1]), suivi d'une liste.\n\n[^1]: L'ordinateur gère differement les array des variables. Bien que const, l'array peut toujours etre modifier."
+                "Pour créer un array, déclarer une variable (generalement const¹), suivi d'une liste.\n\n¹: L'ordinateur gère differement les array des variables. Bien que const, l'array peut toujours etre modifier."
             ],
             "outputs": []
         },
@@ -991,6 +1047,139 @@
             "language": "javascript",
             "source": [
                 "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nfor (let i = 0; i < fruits.length; i++) {\n    const fruit = fruits[i];\n\n    console.log(fruit);\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Boucle for of"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Comme la boucle `for`, la boucle `for of` permet d'itérer un array mais a une difference.\n\nAu lieu de créer un index, verifier qu'il est inférieur a la taille de l'array et enfin l'incrémenter; la boucle `for in` est spécialement faite pour itéré un array (la ou une boucle for aurait pu être utiliser dans d'autres scénarios)."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "for (let element of array) {\n    // code\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nfor (let fruit of fruits) {\n    console.log(fruit);\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une variable `fruit` est créé a chaque itération et ensuite log dans la console"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Boucle for in"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "La boucle `for in` est très similaire a la boucle `for of` avec la difference principale étant qu'elle permet d'itérer un objet et non un array"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "for (let key in object) {\n    // code\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const person = {\n    name: \"Jean\",\n    surname: \"Baignoire\",\n    age: 24,\n    sePresenter: function () {\n        console.log(`Salut moi c'est ${this.name}`);\n    }\n};\n\nfor (let key in person) {\n    console.log(key);\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Boucle foreach"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "La fonction `foreach` est une méthode présente sur **tout** les array. Son seul argument est un `callback`"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "[].forEach(function (value, index, array) {\n    // code\n})"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "La fonction `callback` prends trois arguments:\n- value: qui correspond a la valeur de l'element actuel de l'array\n- index: l'index de l'element actuel de l'array\n- array: l'array dans sa totalité"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\n\nfruits.forEach(function (value, index, array) {\n    console.log(\"valeur: \", value);\n    console.log(\"index: \", index);\n    console.log(\"array: \" ,array);\n    \n})"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Les callbacks"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les `callbacks` sont, généralement, des fonctions donné en paramètres a des fonctions"
             ],
             "outputs": []
         }
