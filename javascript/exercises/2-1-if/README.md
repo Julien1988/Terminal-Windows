@@ -1,4 +1,4 @@
-# Exercice 2-1: Propriétés
+# Exercice 2-1: if
 
 ## Exercice
 
@@ -10,5 +10,5 @@ commentaire.
 Pour lancer le script execute cette commande dans le terminal:
 
 ```bash
-npm run exercise 2-1-properties
+npm run exercise 2-1-if
 ```

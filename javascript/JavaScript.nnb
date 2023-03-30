@@ -514,125 +514,6 @@
         {
             "language": "markdown",
             "source": [
-                "# Objets, Propriétés et Méthodes"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "Les objets sont un groupement de variables et de fonctions.\r\n\r\nDans la vrai vie (pas la fausse), une voiture est un objet.\r\n\r\nUne voiture a des propriétés et des méthodes:\r\n\r\n| Propriétés                | Méthodes       \t        |\r\n|-----------------------\t|---------------\t        |\r\n| voiture.nom = Fiat        | voiture.démarer()         |\r\n| voiture.model = 500       | voiture.rouler()        \t|\r\n| voiture.poids = 850kg     | voiture.freiner()         |\r\n| voiture.couleur = blanc   | voiture.eteindre()        |\r\n\r\nToutes les voiture auront les meme propriété **mais** avec des **valeurs** différentes\r\n"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "## Propriété"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "Pour créer un objet avec des propriétés (variables), dans des accolades, ajouter les propriété suivi de leurs valeurs\r\n\r\n> Un objet est un type de valeur donc n'oublier pas de le stocker dans une variable!"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "javascript",
-            "source": [
-                "const voiture = {\n    nom: \"Fiat\",\n    model: \"500\",\n    poids: \"850Kg\",\n    couleur: \"blanc\"\n};\n\nconsole.log(voiture.nom);"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "Les valeurs sont noté en pair de `nom:valeur` (nom et valeur séparer par un double point).\nPour acceder une propriété d'un objet, ajouter un point suivi du nom de la propriété voulue a la suite de la variable."
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "## Méthodes"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "Pour créer un objet avec des méthodes (fonction), dans des accolades, ajouter les nom de méthode suivi de leurs fonction\r\n"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "javascript",
-            "source": [
-                "const personne = {\n    nom: \"Pierre\",\n    prenom: \"Vildesac\",\n    taille: 170,\n    poids: 85,\n    sePresenter: function() {\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`); \n    }\n};\n\npersonne.sePresenter();"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "Pour appeller une méthode d'un objet, ajouter un point suivi du nom de la méthode voulue a la suite de la variable."
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "## Arrow function and function"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "Il y a en réalité deux façons différente de créé une function:\n- Avec le mot clé `function`\n- Avec une flêche"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "javascript",
-            "source": [
-                "function hello() {\n    console.log(\"hello\");\n};\n\nconst world = () => {\n    console.log(\"world\");\n};\n\nhello();\nworld();"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "#### Quel est la différence?"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "La différence entre une function et arrow function revient au mot clé `this`.\nDans une fonction normale, le mot clé `this` représente le **parent** de la fonction.\nAlors que dans une arrow function, le mot clé `this` représente le **parent** de la position ou elle a été appellé."
-            ],
-            "outputs": []
-        },
-        {
-            "language": "javascript",
-            "source": [
-                "const personne = {\n    nom: \"Pierre\",\n    prenom: \"Vildesac\",\n    taille: 170,\n    poids: 85,\n    sePresenter: function () {\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`);\n    },\n    sePresenterArrow: () => {\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`);\n    },\n    foo: function () {\n        console.log(\"from function: \", this);\n        const bar = () => {\n            console.log(\"from arrow function: \", this);\n        }\n\n        bar();\n    }\n};\n\npersonne.sePresenter();\npersonne.sePresenterArrow();\n\npersonne.foo();"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
-                "https://dmitripavlutin.com/differences-between-arrow-and-regular-functions/"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "markdown",
-            "source": [
                 "# Conditions"
             ],
             "outputs": []
@@ -689,7 +570,7 @@
         {
             "language": "javascript",
             "source": [
-                "if (condition) {\n    //  Bloc de code à exécuter si la condition est vraie (true).\n} "
+                "if (condition) {\r\n    //  Bloc de code à exécuter si la condition est vraie (true).\r\n} "
             ],
             "outputs": []
         },
@@ -710,7 +591,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(\"5 > 3 : \" + (5 > 3));      // => true\nconsole.log(\"5 < 4 : \" + (5 < 4));      // => false\nconsole.log(\"10 == 10: \" + (10 == 10)); // => true\nconsole.log(\"5 != 10: \" + (5 != 10));   // => true\n"
+                "console.log(\"5 > 3 : \" + (5 > 3));      // => true\r\nconsole.log(\"5 < 4 : \" + (5 < 4));      // => false\r\nconsole.log(\"10 == 10: \" + (10 == 10)); // => true\r\nconsole.log(\"5 != 10: \" + (5 != 10));   // => true\r\n"
             ],
             "outputs": []
         },
@@ -731,7 +612,7 @@
         {
             "language": "javascript",
             "source": [
-                "let age = 17;\n\nif (age >= 18) {\n    console.log(\"Bienvenue au bar!\");\n}"
+                "let age = 17;\r\n\r\nif (age >= 18) {\r\n    console.log(\"Bienvenue au bar!\");\r\n}"
             ],
             "outputs": []
         },
@@ -759,7 +640,7 @@
         {
             "language": "javascript",
             "source": [
-                "if (condition) {\n    //  Bloc de code à exécuter si la condition est vraie (true).\n} else {\n    // Block de code à exècuter si la condition if est fausse (false).\n}"
+                "if (condition) {\r\n    //  Bloc de code à exécuter si la condition est vraie (true).\r\n} else {\r\n    // Block de code à exècuter si la condition if est fausse (false).\r\n}"
             ],
             "outputs": []
         },
@@ -780,7 +661,154 @@
         {
             "language": "javascript",
             "source": [
-                "let age = 17;\n\nif (age >= 18) {\n    console.log(\"Bienvenue au bar!\");\n} else {\n    console.log(\"Vas-t'en!\");\n}"
+                "let age = 17;\r\n\r\nif (age >= 18) {\r\n    console.log(\"Bienvenue au bar!\");\r\n} else {\r\n    console.log(\"Vas-t'en!\");\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Objets, Propriétés et Méthodes"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les objets sont un groupement de variables et de fonctions.\r\n\r\nDans la vrai vie (pas la fausse), une voiture est un objet.\r\n\r\nUne voiture a des propriétés et des méthodes:\r\n\r\n| Propriétés                | Méthodes       \t        |\r\n|-----------------------\t|---------------\t        |\r\n| voiture.nom = Fiat        | voiture.démarer()         |\r\n| voiture.model = 500       | voiture.rouler()        \t|\r\n| voiture.poids = 850kg     | voiture.freiner()         |\r\n| voiture.couleur = blanc   | voiture.eteindre()        |\r\n\r\nToutes les voiture auront les meme propriété **mais** avec des **valeurs** différentes\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Propriété"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour créer un objet avec des propriétés (variables), dans des accolades, ajouter les propriété suivi de leurs valeurs\r\n\r\n> Un objet est un type de valeur donc n'oublier pas de le stocker dans une variable!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const voiture = {\r\n    nom: \"Fiat\",\r\n    model: \"500\",\r\n    poids: \"850Kg\",\r\n    couleur: \"blanc\"\r\n};\r\n\r\nconsole.log(voiture.nom);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les valeurs sont noté en pair de `nom:valeur` (nom et valeur séparer par un double point).\nPour acceder une propriété d'un objet, ajouter un point suivi du nom de la propriété voulue a la suite de la variable."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Méthodes"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour créer un objet avec des méthodes (fonction), dans des accolades, ajouter les nom de méthode suivi de leurs fonction\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const personne = {\r\n    nom: \"Pierre\",\r\n    prenom: \"Vildesac\",\r\n    taille: 170,\r\n    poids: 85,\r\n    sePresenter: function() {\r\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`); \r\n    }\r\n};\r\n\r\npersonne.sePresenter();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour appeller une méthode d'un objet, ajouter un point suivi du nom de la méthode voulue a la suite de la variable."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Constructeur d'objet"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Imaginons que nous devons créer un objet `personne` régulierement. Au lieu de créer l'objet manuelement, il est intéressant d'utiliser un constructeur d'objet.\r\n\r\nPour créer un constructeur d'objet, déclarer une fonction qui aura le nom génerique de votre objet - dans ce cas ci, Person - et, en paramètres, les propriétés de votre objet."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function Person(name, age, city) {\r\n    this.test = 24\r\n    this.name = name;\r\n    this.age = age;\r\n    this.city = city;\r\n    this.sePresenter = function() {\r\n        console.log(`Bonjour! Je suis ${this.name}, j'ai ${this.age} et j'habite a ${this.city}`);\r\n    }\r\n}\r\n\r\nconst person = new Person(\"John\", 24, \"Gembloux\");\r\nconst person2 = new Person(\"Fred\", 18, \"Hannut\");\r\n\r\nperson.sePresenter();\r\nperson2.sePresenter();\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## *Arrow function and function"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Il y a en réalité deux façons différente de créé une function:\n- Avec le mot clé `function`\n- Avec une flêche"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function hello() {\r\n    console.log(\"hello\");\r\n};\r\n\r\nconst world = () => {\r\n    console.log(\"world\");\r\n};\r\n\r\nhello();\r\nworld();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Quel est la différence?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "La différence entre une function et arrow function revient au mot clé `this`.\nDans une fonction normale, le mot clé `this` représente le **parent** de la fonction.\nAlors que dans une arrow function, le mot clé `this` représente le **parent** de la position ou elle a été appellé."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const personne = {\r\n    nom: \"Pierre\",\r\n    prenom: \"Vildesac\",\r\n    taille: 170,\r\n    poids: 85,\r\n    sePresenter: function () {\r\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`);\r\n    },\r\n    sePresenterArrow: () => {\r\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`);\r\n    },\r\n    foo: function () {\r\n        console.log(\"from function: \", this);\r\n        const bar = () => {\r\n            console.log(\"from arrow function: \", this);\r\n        }\r\n\r\n        bar();\r\n    }\r\n};\r\n\r\npersonne.sePresenter();\r\npersonne.sePresenterArrow();\r\n\r\npersonne.foo();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "https://dmitripavlutin.com/differences-between-arrow-and-regular-functions/"
             ],
             "outputs": []
         },
@@ -850,7 +878,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nconsole.log(fruits);"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nconsole.log(fruits);"
             ],
             "outputs": []
         },
@@ -878,7 +906,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nconsole.log(fruits[0]);\n"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nconsole.log(fruits[0]);\r\n"
             ],
             "outputs": []
         },
@@ -906,7 +934,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nconsole.log(fruits[99]);    // ! Il n'y a pas d'element a la position 99 de l'array"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nconsole.log(fruits[99]);    // ! Il n'y a pas d'element a la position 99 de l'array"
             ],
             "outputs": []
         },
@@ -948,7 +976,7 @@
         {
             "language": "javascript",
             "source": [
-                "while (condition) {\n    // code\n}"
+                "while (condition) {\r\n    // code\r\n}"
             ],
             "outputs": []
         },
@@ -962,21 +990,21 @@
         {
             "language": "markdown",
             "source": [
-                "### Example\n"
+                "### Example\r\n"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "let i = 0;\nwhile (i < 10) {\n    console.log(n);\n    i++;\n}"
+                "let i = 0;\r\nwhile (i < 10) {\r\n    console.log(n);\r\n    i++;\r\n}"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nlet i = 0;\nwhile (i < fruits.length) {\n    const fruit = fruits[i];\n\n    console.log(fruit);\n\n    i++;\n}"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nlet i = 0;\r\nwhile (i < fruits.length) {\r\n    const fruit = fruits[i];\r\n\r\n    console.log(fruit);\r\n\r\n    i++;\r\n}"
             ],
             "outputs": []
         },
@@ -984,6 +1012,34 @@
             "language": "markdown",
             "source": [
                 "> `length` est une propriété de l'array qui contient la taille de celui-ci. Cela permet de ne pas acceder a des valeurs en dehors de l'array."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Boucle do while"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une boucle `do while` est extremement similaire a une boucle `while`. La seule différence étant que la condition sera executer **apres** la premiere itération de la boucle.\r\n\r\nCela est utile si votre boucle nécessite au moins **une** itération.\r\n\r\nSon utilisation est plus rare."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "do {\r\n    // code\r\n} while (condition)"
             ],
             "outputs": []
         },
@@ -1004,7 +1060,7 @@
         {
             "language": "javascript",
             "source": [
-                "for (expressionInitiale; condition; expressionFinale) {\n    // code\n}"
+                "for (expressionInitiale; condition; expressionFinale) {\r\n    // code\r\n}"
             ],
             "outputs": []
         },
@@ -1032,7 +1088,7 @@
         {
             "language": "javascript",
             "source": [
-                "for (let i = 0; i < 10; i++) {\n    console.log(i);\n}"
+                "for (let i = 0; i < 10; i++) {\r\n    console.log(i);\r\n}"
             ],
             "outputs": []
         },
@@ -1046,7 +1102,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nfor (let i = 0; i < fruits.length; i++) {\n    const fruit = fruits[i];\n\n    console.log(fruit);\n}"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nfor (let i = 0; i < fruits.length; i++) {\r\n    const fruit = fruits[i];\r\n\r\n    console.log(fruit);\r\n}"
             ],
             "outputs": []
         },
@@ -1067,7 +1123,7 @@
         {
             "language": "javascript",
             "source": [
-                "for (let element of array) {\n    // code\n}"
+                "for (let element of array) {\r\n    // code\r\n}"
             ],
             "outputs": []
         },
@@ -1081,7 +1137,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nfor (let fruit of fruits) {\n    console.log(fruit);\n}"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nfor (let fruit of fruits) {\r\n    console.log(fruit);\r\n}"
             ],
             "outputs": []
         },
@@ -1109,7 +1165,7 @@
         {
             "language": "javascript",
             "source": [
-                "for (let key in object) {\n    // code\n}"
+                "for (let key in object) {\r\n    // code\r\n}"
             ],
             "outputs": []
         },
@@ -1123,7 +1179,7 @@
         {
             "language": "javascript",
             "source": [
-                "const person = {\n    name: \"Jean\",\n    surname: \"Baignoire\",\n    age: 24,\n    sePresenter: function () {\n        console.log(`Salut moi c'est ${this.name}`);\n    }\n};\n\nfor (let key in person) {\n    console.log(key);\n}"
+                "const person = {\r\n    name: \"Jean\",\r\n    surname: \"Baignoire\",\r\n    age: 24,\r\n    sePresenter: function () {\r\n        console.log(`Salut moi c'est ${this.name}`);\r\n    }\r\n};\r\n\r\nfor (let key in person) {\r\n    console.log(key);\r\n}"
             ],
             "outputs": []
         },
@@ -1144,7 +1200,7 @@
         {
             "language": "javascript",
             "source": [
-                "[].forEach(function (value, index, array) {\n    // code\n})"
+                "[].forEach(function (value, index, array) {\r\n    // code\r\n})"
             ],
             "outputs": []
         },
@@ -1165,7 +1221,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\n\nfruits.forEach(function (value, index, array) {\n    console.log(\"valeur: \", value);\n    console.log(\"index: \", index);\n    console.log(\"array: \" ,array);\n    \n})"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\n\r\nfruits.forEach(function (value, index, array) {\r\n    console.log(\"valeur: \", value);\r\n    console.log(\"index: \", index);\r\n    console.log(\"array: \" ,array);\r\n    \r\n})"
             ],
             "outputs": []
         },

@@ -1,4 +1,4 @@
-# Exercice 2-2: Méthodes
+# Exercice 2-2: boolean
 
 ## Exercice
 
@@ -10,5 +10,5 @@ commentaire.
 Pour lancer le script execute cette commande dans le terminal:
 
 ```bash
-npm run exercise 2-2-methods
+npm run exercise 2-2-boolean
 ```

@@ -1,4 +1,4 @@
-# Exercice 0-0: exercice
+# Exercice 4-1: arrays
 
 ## Exercice
 
@@ -10,5 +10,5 @@ commentaire.
 Pour lancer le script execute cette commande dans le terminal:
 
 ```bash
-npm run exercise 0-0-exercise
+npm run exercise 4-1-arrays
 ```

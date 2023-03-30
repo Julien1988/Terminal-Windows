@@ -1,4 +1,4 @@
-# Exercice 0-0: exercice
+# Exercice 3-1: Propriétés
 
 ## Exercice
 
@@ -10,5 +10,5 @@ commentaire.
 Pour lancer le script execute cette commande dans le terminal:
 
 ```bash
-npm run exercise 0-0-exercise
+npm run exercise 3-1-properties
 ```

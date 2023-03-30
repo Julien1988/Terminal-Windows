@@ -4,7 +4,17 @@
 
 
 
-// log toutes les propriétés de l'objet et execute ça méthode
+
+// log toutes les propriétés
+
+
+
+
+
+
+// execute la méthode 'sePresenter' de l'objet
+
+
 
 
 

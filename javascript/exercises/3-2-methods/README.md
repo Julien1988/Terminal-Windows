@@ -1,4 +1,4 @@
-# Exercice 2-3: Mot clé this
+# Exercice 3-2: Méthodes
 
 ## Exercice
 
@@ -10,5 +10,5 @@ commentaire.
 Pour lancer le script execute cette commande dans le terminal:
 
 ```bash
-npm run exercise 2-3-this
+npm run exercise 3-2-methods
 ```
