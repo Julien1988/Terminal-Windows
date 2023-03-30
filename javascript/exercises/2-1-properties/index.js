@@ -8,5 +8,5 @@
 
 
 
-// Crée une fonction qui prend en paramètre un objet avec un nom, prenom et age
-// et presente l'utilisateur dans la console
+// Crée une fonction qui prend en paramètre un objet 
+// qui presente l'utilisateur dans la console: "Bonjour, Je suis Jeremy Vildesac et j'ai 25 ans"

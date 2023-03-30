@@ -88,8 +88,8 @@ check(rectangleLargeur, "rectangleLargeur", 20);
 check(rectangleHauteur, "rectangleHauteur", 40);
 check(rectangleAire, "rectangleAire", 800);
 check(triangleBase, "triangleBase", 44);
-check(triangleHauteur, "triangleHauteur", 6);
-check(triangleAire, "triangleAire", 132);
+check(triangleHauteur, "triangleHauteur", 10);
+check(triangleAire, "triangleAire", 220);
 
 
 
