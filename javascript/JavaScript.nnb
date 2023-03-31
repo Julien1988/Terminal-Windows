@@ -570,7 +570,7 @@
         {
             "language": "javascript",
             "source": [
-                "if (condition) {\r\n    //  Bloc de code à exécuter si la condition est vraie (true).\r\n} "
+                "if (condition) {\n    //  Bloc de code à exécuter si la condition est vraie (true).\n} "
             ],
             "outputs": []
         },
@@ -591,7 +591,7 @@
         {
             "language": "javascript",
             "source": [
-                "console.log(\"5 > 3 : \" + (5 > 3));      // => true\r\nconsole.log(\"5 < 4 : \" + (5 < 4));      // => false\r\nconsole.log(\"10 == 10: \" + (10 == 10)); // => true\r\nconsole.log(\"5 != 10: \" + (5 != 10));   // => true\r\n"
+                "console.log(\"5 > 3 : \" + (5 > 3));      // => true\nconsole.log(\"5 < 4 : \" + (5 < 4));      // => false\nconsole.log(\"10 == 10: \" + (10 == 10)); // => true\nconsole.log(\"5 != 10: \" + (5 != 10));   // => true\n"
             ],
             "outputs": []
         },
@@ -612,7 +612,7 @@
         {
             "language": "javascript",
             "source": [
-                "let age = 17;\r\n\r\nif (age >= 18) {\r\n    console.log(\"Bienvenue au bar!\");\r\n}"
+                "let age = 17;\n\nif (age >= 18) {\n    console.log(\"Bienvenue au bar!\");\n}"
             ],
             "outputs": []
         },
@@ -696,7 +696,7 @@
         {
             "language": "javascript",
             "source": [
-                "const voiture = {\r\n    nom: \"Fiat\",\r\n    model: \"500\",\r\n    poids: \"850Kg\",\r\n    couleur: \"blanc\"\r\n};\r\n\r\nconsole.log(voiture.nom);"
+                "const voiture = {\n    nom: \"Fiat\",\n    model: \"500\",\n    poids: \"850Kg\",\n    couleur: \"blanc\"\n};\n\nconsole.log(voiture.nom);"
             ],
             "outputs": []
         },
@@ -724,7 +724,7 @@
         {
             "language": "javascript",
             "source": [
-                "const personne = {\r\n    nom: \"Pierre\",\r\n    prenom: \"Vildesac\",\r\n    taille: 170,\r\n    poids: 85,\r\n    sePresenter: function() {\r\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`); \r\n    }\r\n};\r\n\r\npersonne.sePresenter();"
+                "const personne = {\n    nom: \"Pierre\",\n    prenom: \"Vildesac\",\n    taille: 170,\n    poids: 85,\n    sePresenter: function() {\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`); \n    }\n};\n\npersonne.sePresenter();"
             ],
             "outputs": []
         },
@@ -759,7 +759,7 @@
         {
             "language": "javascript",
             "source": [
-                "function Person(name, age, city) {\r\n    this.test = 24\r\n    this.name = name;\r\n    this.age = age;\r\n    this.city = city;\r\n    this.sePresenter = function() {\r\n        console.log(`Bonjour! Je suis ${this.name}, j'ai ${this.age} et j'habite a ${this.city}`);\r\n    }\r\n}\r\n\r\nconst person = new Person(\"John\", 24, \"Gembloux\");\r\nconst person2 = new Person(\"Fred\", 18, \"Hannut\");\r\n\r\nperson.sePresenter();\r\nperson2.sePresenter();\r\n"
+                "function Person(name, age, city) {\n    this.test = 24\n    this.name = name;\n    this.age = age;\n    this.city = city;\n    this.sePresenter = function() {\n        console.log(`Bonjour! Je suis ${this.name}, j'ai ${this.age} et j'habite a ${this.city}`);\n    }\n}\n\nconst person = new Person(\"John\", 24, \"Gembloux\");\nconst person2 = new Person(\"Fred\", 18, \"Hannut\");\n\nperson.sePresenter();\nperson2.sePresenter();\n"
             ],
             "outputs": []
         },
@@ -780,7 +780,7 @@
         {
             "language": "javascript",
             "source": [
-                "function hello() {\r\n    console.log(\"hello\");\r\n};\r\n\r\nconst world = () => {\r\n    console.log(\"world\");\r\n};\r\n\r\nhello();\r\nworld();"
+                "function hello() {\n    console.log(\"hello\");\n};\n\nconst world = () => {\n    console.log(\"world\");\n};\n\nhello();\nworld();"
             ],
             "outputs": []
         },
@@ -878,7 +878,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nconsole.log(fruits);"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nconsole.log(fruits);"
             ],
             "outputs": []
         },
@@ -906,7 +906,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nconsole.log(fruits[0]);\r\n"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nconsole.log(fruits[0]);\n"
             ],
             "outputs": []
         },
@@ -934,7 +934,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nconsole.log(fruits[99]);    // ! Il n'y a pas d'element a la position 99 de l'array"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nconsole.log(fruits[99]);    // ! Il n'y a pas d'element a la position 99 de l'array"
             ],
             "outputs": []
         },
@@ -976,7 +976,7 @@
         {
             "language": "javascript",
             "source": [
-                "while (condition) {\r\n    // code\r\n}"
+                "while (condition) {\n    // code\n}"
             ],
             "outputs": []
         },
@@ -990,21 +990,21 @@
         {
             "language": "markdown",
             "source": [
-                "### Example\r\n"
+                "#### Example\n"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "let i = 0;\r\nwhile (i < 10) {\r\n    console.log(n);\r\n    i++;\r\n}"
+                "let i = 0;\nwhile (i < 10) {\n    console.log(n);\n    i++;\n}"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nlet i = 0;\r\nwhile (i < fruits.length) {\r\n    const fruit = fruits[i];\r\n\r\n    console.log(fruit);\r\n\r\n    i++;\r\n}"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nlet i = 0;\nwhile (i < fruits.length) {\n    const fruit = fruits[i];\n\n    console.log(fruit);\n\n    i++;\n}"
             ],
             "outputs": []
         },
@@ -1032,14 +1032,14 @@
         {
             "language": "markdown",
             "source": [
-                "### Example"
+                "#### Example"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "do {\r\n    // code\r\n} while (condition)"
+                "do {\n    // code\n} while (condition)"
             ],
             "outputs": []
         },
@@ -1060,7 +1060,7 @@
         {
             "language": "javascript",
             "source": [
-                "for (expressionInitiale; condition; expressionFinale) {\r\n    // code\r\n}"
+                "for (expressionInitiale; condition; expressionFinale) {\n    // code\n}"
             ],
             "outputs": []
         },
@@ -1074,7 +1074,7 @@
         {
             "language": "markdown",
             "source": [
-                "### Example"
+                "#### Example"
             ],
             "outputs": []
         },
@@ -1088,7 +1088,7 @@
         {
             "language": "javascript",
             "source": [
-                "for (let i = 0; i < 10; i++) {\r\n    console.log(i);\r\n}"
+                "for (let i = 0; i < 10; i++) {\n    console.log(i);\n}"
             ],
             "outputs": []
         },
@@ -1102,7 +1102,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nfor (let i = 0; i < fruits.length; i++) {\r\n    const fruit = fruits[i];\r\n\r\n    console.log(fruit);\r\n}"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nfor (let i = 0; i < fruits.length; i++) {\n    const fruit = fruits[i];\n\n    console.log(fruit);\n}"
             ],
             "outputs": []
         },
@@ -1123,7 +1123,7 @@
         {
             "language": "javascript",
             "source": [
-                "for (let element of array) {\r\n    // code\r\n}"
+                "for (let element of array) {\n    // code\n}"
             ],
             "outputs": []
         },
@@ -1165,7 +1165,7 @@
         {
             "language": "javascript",
             "source": [
-                "for (let key in object) {\r\n    // code\r\n}"
+                "for (let key in object) {\n    // code\n}"
             ],
             "outputs": []
         },
@@ -1200,7 +1200,7 @@
         {
             "language": "javascript",
             "source": [
-                "[].forEach(function (value, index, array) {\r\n    // code\r\n})"
+                "[].forEach(function (value, index, array) {\n    // code\n})"
             ],
             "outputs": []
         },
