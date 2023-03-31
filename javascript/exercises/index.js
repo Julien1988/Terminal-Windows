@@ -11,14 +11,14 @@ function executeScript(exerciseName) {
         });
         const selectedExerciseIndex = getUserInput('Entre le nombre de l\'exercise que tu veux lancer:');
         const selectedExercise = exercises[selectedExerciseIndex - 1];
-        console.log(chalk.yellow(`Running exercise "${selectedExercise}"...`));
+        // console.log(chalk.yellow(`Lancement de "${selectedExercise}"...`));
         executeScript(selectedExercise);
     } else {
         const scriptPath = path.join(__dirname, exerciseName, 'index.js');
         if (!fs.existsSync(scriptPath)) {
             console.log(chalk.red(`Erreur: Le script "${exerciseName}" n'a pas été trouver`));
         } else {
-            console.log(chalk.yellow(`Lancement de "${exerciseName}"...`));
+            console.log(chalk.yellow(`Execution de "${exerciseName}"...`));
             require(scriptPath);
         }
     }
