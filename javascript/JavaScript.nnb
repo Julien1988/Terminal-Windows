@@ -640,7 +640,7 @@
         {
             "language": "javascript",
             "source": [
-                "if (condition) {\r\n    //  Bloc de code à exécuter si la condition est vraie (true).\r\n} else {\r\n    // Block de code à exècuter si la condition if est fausse (false).\r\n}"
+                "if (condition) {\n    //  Bloc de code à exécuter si la condition est vraie (true).\n} else {\n    // Block de code à exècuter si la condition if est fausse (false).\n}"
             ],
             "outputs": []
         },
@@ -661,7 +661,7 @@
         {
             "language": "javascript",
             "source": [
-                "let age = 17;\r\n\r\nif (age >= 18) {\r\n    console.log(\"Bienvenue au bar!\");\r\n} else {\r\n    console.log(\"Vas-t'en!\");\r\n}"
+                "let age = 17;\n\nif (age >= 18) {\n    console.log(\"Bienvenue au bar!\");\n} else {\n    console.log(\"Vas-t'en!\");\n}"
             ],
             "outputs": []
         },
@@ -1137,7 +1137,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nfor (let fruit of fruits) {\r\n    console.log(fruit);\r\n}"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nfor (let fruit of fruits) {\n    console.log(fruit);\n}"
             ],
             "outputs": []
         },
@@ -1179,7 +1179,7 @@
         {
             "language": "javascript",
             "source": [
-                "const person = {\r\n    name: \"Jean\",\r\n    surname: \"Baignoire\",\r\n    age: 24,\r\n    sePresenter: function () {\r\n        console.log(`Salut moi c'est ${this.name}`);\r\n    }\r\n};\r\n\r\nfor (let key in person) {\r\n    console.log(key);\r\n}"
+                "const person = {\n    name: \"Jean\",\n    surname: \"Baignoire\",\n    age: 24,\n    sePresenter: function () {\n        console.log(`Salut moi c'est ${this.name}`);\n    }\n};\n\nfor (let key in person) {\n    console.log(key);\n}"
             ],
             "outputs": []
         },
@@ -1221,7 +1221,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\n\r\nfruits.forEach(function (value, index, array) {\r\n    console.log(\"valeur: \", value);\r\n    console.log(\"index: \", index);\r\n    console.log(\"array: \" ,array);\r\n    \r\n})"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\n\nfruits.forEach(function (value, index, array) {\n    console.log(\"valeur: \", value);\n    console.log(\"index: \", index);\n    console.log(\"array: \" ,array);\n    \n})"
             ],
             "outputs": []
         },

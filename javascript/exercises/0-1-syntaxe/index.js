@@ -34,11 +34,14 @@
 /* FIN DE L'EXERCICE: NE PAS MODIFIER EN DESSOUS DE CETTE LIGNE */
 
 
-const chalk = require("chalk");
+import chalk from "chalk";
 
-
-console.log(chalk.green(`prenom: '${myName}'`));
-console.log(chalk.green(`nom: '${mySurname}'`));
-console.log(chalk.green(`age: ${myAge}`));
-console.log(chalk.green(`est riche?: ${isRich}`));
-console.log(chalk.red(`numéro carte crédit invalide :(`));
+try {
+    console.log(chalk.green(`prenom: '${myName}'`));
+    console.log(chalk.green(`nom: '${mySurname}'`));
+    console.log(chalk.green(`age: ${myAge}`));
+    console.log(chalk.green(`est riche?: ${isRich}`));
+    console.log(chalk.red(`numéro carte crédit invalide :(`));
+} catch (err) {
+    console.log(chalk.red("Une erreur est survenue:", err));
+}

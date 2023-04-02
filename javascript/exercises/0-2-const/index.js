@@ -55,7 +55,7 @@ console.log("The new value of num is: " + num);
 
 
 
-const chalk = require("chalk");
+import chalk from "chalk";
 
 
 function getVariableDeclarationType(variableName) {
@@ -78,7 +78,7 @@ function getVariableDeclarationType(variableName) {
 function check(variableName, type) {
     return getVariableDeclarationType(variableName) == type ?
         chalk.green(`✓ Variable ${variableName} est déclarer avec ${type}`) :
-        chalk.red(`✗ Variable ${variableName} n'est pas déclarer avec ${type}`);
+        chalk.red(`✗ Variable ${variableName} n'est pas déclarer avec le bon type`);
 }
 
 console.log();

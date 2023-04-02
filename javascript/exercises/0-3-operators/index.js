@@ -67,7 +67,7 @@ let triangleAire = undefined;
 
 /* FIN DE L'EXERCICE: NE PAS MODIFIER EN DESSOUS DE CETTE LIGNE */
 
-const chalk = require("chalk");
+import chalk from "chalk";
 
 function check(variable, variableName, expectedValue) {
 

@@ -49,7 +49,7 @@
 
 // FIN DE L'EXERCICE. NE PAS MODIFIER
 
-const chalk = require("chalk");
+import chalk from "chalk";
 
 function check(variable, variableName, expectedValue) {
 
@@ -70,8 +70,8 @@ try {
     check(isEvenorOdd(34), "isEvenorOdd(34)", true);
     check(isEvenorOdd(55), "isEvenorOdd(55)", false);
     check(isEvenorOdd(49), "isEvenorOdd(49)", false);
-} catch {
-    console.log(chalk.red("Une erreur est survenue. Est-ce que la fonction 'isEvenorOdd' existe?"));
+} catch (err) {
+    console.log(chalk.red("Une erreur est survenue:", err));
 }
 
 
@@ -85,21 +85,21 @@ try {
     check(findLargest(100, 96), "findLargest(100, 96)", true);
     check(findLargest(18, 2), "findLargest(18, 2)", true);
     check(findLargest(2, 2), "findLargest(2, 2)", false);
-} catch {
-    console.log(chalk.red("Une erreur est survenue. Est-ce que la fonction 'findLargest' existe?"));
+} catch (err) {
+    console.log(chalk.red("Une erreur est survenue:", err));
 }
 
 console.log("");
 try {
 
     console.log(chalk.blue("Check fonction 'isEqual'..."));
-    check(isEqual(16, 16), "findLargest(16, 16)", true);
-    check(isEqual(20, 9), "findLargest(20, 9)", false);
-    check(isEqual(40, 40), "findLargest(40, 40)", true);
-    check(isEqual(8, 56), "findLargest(8, 56)", false);
-    check(isEqual(100, 96), "findLargest(100, 96)", false);
-    check(isEqual(18, 18), "findLargest(18, 18)", true);
-    check(isEqual(2, 2), "findLargest(2, 2)", true);
-} catch {
-    console.log(chalk.red("Une erreur est survenue. Est-ce que la fonction 'isEqual' existe?"));
+    check(isEqual(16, 16), "isEqual(16, 16)", true);
+    check(isEqual(20, 9), "isEqual(20, 9)", false);
+    check(isEqual(40, 40), "isEqual(40, 40)", true);
+    check(isEqual(8, 56), "isEqual(8, 56)", false);
+    check(isEqual(100, 96), "isEqual(100, 96)", false);
+    check(isEqual(18, 18), "isEqual(18, 18)", true);
+    check(isEqual(2, 2), "isEqual(2, 2)", true);
+} catch (err) {
+    console.log(chalk.red("Une erreur est survenue:", err));
 }

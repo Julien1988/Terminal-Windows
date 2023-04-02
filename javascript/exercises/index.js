@@ -1,25 +1,39 @@
-const fs = require('fs');
-const path = require('path');
-const chalk = require('chalk');
+import fs from 'fs';
+import path from 'path';
+import chalk from 'chalk';
+import inquirer from 'inquirer';
 
-function executeScript(exerciseName) {
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+async function executeScript(exerciseName) {
     if (!exerciseName) {
         const exercises = getAvailableExercises();
-        console.log(chalk.yellow('Exercises disponibles:'));
-        exercises.forEach((exercise, index) => {
-            console.log(chalk.yellow(`${index + 1}. ${exercise}`));
-        });
-        const selectedExerciseIndex = getUserInput('Entre le nombre de l\'exercise que tu veux lancer:');
-        const selectedExercise = exercises[selectedExerciseIndex - 1];
-        // console.log(chalk.yellow(`Lancement de "${selectedExercise}"...`));
-        executeScript(selectedExercise);
+
+        const answers = await inquirer.prompt([
+            {
+                name: 'exercises',
+                type: 'list',
+                message: 'Exercises:',
+                choices: exercises
+            }
+        ]);
+
+        executeScript(answers.exercises);
     } else {
         const scriptPath = path.join(__dirname, exerciseName, 'index.js');
         if (!fs.existsSync(scriptPath)) {
             console.log(chalk.red(`Erreur: Le script "${exerciseName}" n'a pas été trouver`));
         } else {
             console.log(chalk.yellow(`Execution de "${exerciseName}"...`));
-            require(scriptPath);
+            try {
+                await import(scriptPath);
+            } catch (err) {
+                console.log(chalk.red("Une erreur est survenue:", err));
+            }
         }
     }
 }
@@ -31,9 +45,9 @@ function getAvailableExercises() {
     return exerciseDirectories;
 }
 
-function getUserInput(prompt) {
-    const readlineSync = require('readline-sync');
-    return readlineSync.questionInt(prompt);
-}
+// function getUserInput(prompt) {
+//     const readlineSync = require('readline-sync');
+//     return readlineSync.questionInt(prompt);
+// }
 
 executeScript(process.argv[2]);
