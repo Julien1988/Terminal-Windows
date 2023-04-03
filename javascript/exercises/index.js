@@ -30,7 +30,7 @@ async function executeScript(exerciseName) {
         } else {
             console.log(chalk.yellow(`Execution de "${exerciseName}"...`));
             try {
-                await import(scriptPath);
+                await import("file://" + scriptPath);
             } catch (err) {
                 console.log(chalk.red("Une erreur est survenue:", err));
             }
