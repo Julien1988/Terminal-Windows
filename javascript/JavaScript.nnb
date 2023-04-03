@@ -668,6 +668,62 @@
         {
             "language": "markdown",
             "source": [
+                "## L'instruction 'switch'"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une déclaration switch est utile lorsqu'on a besoin de verifier plusieurs fois la valeur d'une variable."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Syntaxe"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "switch (key) {\n    case value:\n        //code\n        break;\n\n    default:\n        break;\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Avec if"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruit = \"orange\";\n\nif (fruit == \"orange\") {\n    console.log(\"Les oranges sont a 5€\");\n} else if (fruit == \"pomme\") {\n    console.log(\"Les pommes sont a 3€\");\n} else if (fruit == \"fraise\") {\n    console.log(\"Les fraises sont a 55€\");\n} else if (fruit == \"cerise\") {\n    console.log(\"Les cerises sont a 4€\");\n} else {\n    console.log(\"Nous ne vendons pas ce fruit.\");\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Avec switch"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruit = \"orange\";\n\nswitch (fruit) {\n    case \"orange\":\n        console.log(\"Les oranges sont a 5€\");\n        break;\n\n    case \"pomme\":\n        console.log(\"Les pommes sont a 3€\");\n        break;\n\n    case \"fraise\":\n        console.log(\"Les fraises sont a 55€\");\n        break;\n\n    case \"cerise\":\n        console.log(\"Les cerises sont a 4€\");\n        break;\n\n    default:\n        console.log(\"Nous ne vendons pas ce fruit.\");\n        break;\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
                 "# Objets, Propriétés et Méthodes"
             ],
             "outputs": []
