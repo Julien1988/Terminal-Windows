@@ -1284,7 +1284,187 @@
         {
             "language": "markdown",
             "source": [
-                "# Les callbacks"
+                "# Classes"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les classes sont des templates - des plans - pour fabriquer des objets. Elles `encapsulent` les données et le code qui travaille sur ces données.\r\n\r\n\"L'encapsulation est un mécanisme consistant à rassembler les données et les méthodes au sein d'une structure en cachant l'implémentation de l'objet, c'est-à-dire en empêchant l'accès aux données par un autre moyen que les services proposés.\" \r\n-DataScientest.com"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Définir une classe"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour définir une classe, on commence avec le mot clé `class` suivi du nom de la classe et enfin un bloc de code qui contiendra les propriétés et méthodes de la classe."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class MyClass {\r\n    \r\n    // Propriétés\r\n\r\n    // Méthodes\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "> Les classes commences par des majuscules !"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une méthode présente sur, *prèsque*, toute les classes est le `constructor`.\r\n\r\nLe constructeur permet d'initialiser la classe avec des données spécifique. Par example, si nous avons une classe `Humain`, chaque humain aura un nom et un age diffferent."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Humain {\r\n\r\n    constructor(nom, age) {\r\n        this.nom = nom;\r\n        this.age = age;\r\n    }\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Ici une classe appelé `Humain` est créée avec un constructeur qui prend un nom et un age. Maintenant, comment utiliser cette classe?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Human {\r\n    constructor(name, age) {\r\n        this.name = name;\r\n        this.age = age;\r\n    }\r\n}\r\n\r\nconst john = new Human(\"john\", 16);\r\nconsole.log(john);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "En utilisant le mot clé `new`, nous disons a javascript que nous voulons un nouvelle objet. Ici, un nouvel objet de type `Human`.\r\nEntre parenthese, nous donnont deux paramètres, ceux-ci sont les paramètres que nous avons définit dans le constructeur de la classe."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Rectangle {\r\n    constructor(height, width) {\r\n        this.height = height;\r\n        this.width = width;\r\n    }\r\n\r\n    calcArea() {\r\n        return this.height * this.width;\r\n    }\r\n}\r\n\r\nconst rectangle = new Rectangle(10, 5);\r\nconst area = rectangle.calcArea();\r\nconsole.log(`Area of the rectangle is: ${area}`);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Rectangle {\r\n    constructor(height, width) {\r\n        this.height = height;\r\n        this.width = width;\r\n    }\r\n\r\n    get area() {\r\n        return this.calcArea();\r\n    }\r\n\r\n    calcArea() {\r\n        return this.height * this.width;\r\n    }\r\n}\r\n\r\nconst rectangle = new Rectangle(10, 5);\r\nconst area = rectangle.area;\r\nconsole.log(`Area of the rectangle is: ${area}`);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "/**\r\n * A class used to generate a rectangle\r\n */\r\nclass Rectangle {\r\n    height;\r\n    width;\r\n\r\n    /**\r\n     * Constructor of the `Rectangle` class\r\n     * @param {Number} height The height of the rectangle\r\n     * @param {Number} width The width of the rectangle\r\n     */\r\n    constructor(height, width) {\r\n        this.height = height;\r\n        this.width = width;\r\n    }\r\n\r\n    get area() {\r\n        return this.#calcArea();\r\n    }\r\n\r\n    /**\r\n     * \r\n     * @returns returns the area of the rectangle\r\n     */\r\n    #calcArea() {\r\n        return this.height * this.width;\r\n    }\r\n}\r\n\r\nconst rectangle = new Rectangle(10, 5);\r\nconst area = rectangle.area;\r\nconsole.log(`Area of the rectangle is: ${area}`);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class ClassWithGetSet {\r\n    #msg = \"hello world\";\r\n    get msg() {\r\n        return this.#msg;\r\n    }\r\n    set msg(x) {\r\n        this.#msg = `hello ${x}`;\r\n    }\r\n}\r\n\r\nconst instance = new ClassWithGetSet();\r\nconsole.log(instance.msg); // \"hello world\"\r\n\r\ninstance.msg = \"cake\";\r\nconsole.log(instance.msg); // \"hello cake\"\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Animal {\r\n    name;\r\n    constructor(name) {\r\n        this.name = name;\r\n    }\r\n\r\n    speak() {\r\n        console.log(`${this.name} makes a noise.`);\r\n    }\r\n}\r\n\r\nclass Dog extends Animal {\r\n    constructor(name) {\r\n        super(name);\r\n    }\r\n\r\n    speak() {\r\n        console.log(`${this.name} barks.`);\r\n    }\r\n}\r\n\r\nconst dog = new Dog(\"Jack\");\r\ndog.speak();"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Jack barks.",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Dice {\r\n    static roll(sides) {\r\n        return Math.floor(Math.random() * sides);\r\n    }\r\n}\r\n\r\nconst random = Dice.roll(6);\r\nconsole.log(random);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "3",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Plus"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Paramètres"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Default "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour donner une valeur par défaut a un paramètre, dans les parenthese de la fonction, r'ajoute un égal suivi de la valeur par defaut apres le nom du paramètre."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function createUser(name = \"john\", age = 24) {\r\n    return {\r\n        name,\r\n        age\r\n    }\r\n}\r\n\r\nconst user = createUser(\"Pierre\", 24);\r\nconst userDefault = createUser();\r\n\r\nconsole.log(user);\r\nconsole.log(userDefault);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Les callbacks"
             ],
             "outputs": []
         },
@@ -1292,6 +1472,48 @@
             "language": "markdown",
             "source": [
                 "Les `callbacks` sont, généralement, des fonctions donné en paramètres a des fonctions"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function doSomething(data = [], callback = function() {}) {\r\n    data.sort((a, b) => a - b);\r\n\r\n    callback(data);\r\n} "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Destructuring"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Destructuer des objets"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Spread syntax (...)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Rest parameters"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Rest property"
             ],
             "outputs": []
         }
